@@ -3,11 +3,16 @@ Font colors used:
 Black-purple: #433237;
 Mulberry: #8e2c48;
 Grey:#a5a0a1;
+Light grey: #ded9da;
 
 Background colors:
 Grey-pink: #f3eaec;
 White-pink: #fffcfd;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -25,9 +30,10 @@ h1 {
 h2 {
   font-family: 'Amiko', sans-serif;
   text-transform: uppercase;
-  color: #8e2c48;
+  color: #bd8c8c;
   font-size: 2em;
   font-weight: 600;
+  line-height: 1.5em;
 }
 
 h3 {
@@ -43,12 +49,17 @@ h4 {
 h5 {
   font-size: 2em;
   font-weight: 600;
-  line-height: 1.75em;
+  line-height: 1.5em;
+}
+
+figcaption {
+  font-style: italic;
 }
 
 img {
   width: 100%;
 }
+
 
 a {
   color: #c2025b;
@@ -73,20 +84,9 @@ a:active {
   color: #80013c;
 }
 
-.icon {
-  fill: #c2025b;
-}
 
-.icon:visited {
-  fill: #c2025b;
-}
-
-.icon:hover,
-:active {
-  fill: #6e0033;
-}
-
-.button {
+.button,
+.button:visited {
   display: inline-block;
   text-transform: uppercase;
   font-family: 'Amiko', sans-serif;
@@ -94,30 +94,125 @@ a:active {
   /* needed to override the default link color */
   background-color: #c2025b;
   font-weight: 400;
-  padding: 14px;
+  padding: 14px 18px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
-.button:visited {
-  color: #ffffff;
-}
-
 .button:hover,
-:focus,
-:active {
+.button:focus,
+.button:active {
   background-color: #6e0033;
   text-decoration: none;
   color: #ffffff;
 }
 
-.button:visited,
-:active {
-  color: #ffffff;
+#knitcase h2 {
+  color: #8e2c48;
 }
 
-#about h2 {
-color: #bd8c8c;
+footer {
+  background-color: #f1dede;
+}
+
+#contact {
+}
+
+#social-media {
+  display: inline-block;
+  width: 100%;
+}
+
+.icon {
+  fill: #291e21;
+    max-width: 250px;
+}
+
+
+.icon:visited {
+  fill: #291e21;
+}
+
+.icon:hover,
+.icon:focus,
+.icon:active {
+  fill: #9d8d95;
+}
+
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #ded9da;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+main {
+  padding-top: 133px;
+}
+
+
+/* Header styling */
+header {
+  background-color: #f1dede;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 68, 92, 0.36);
+  -moz-box-shadow:    0px 4px 5px 0px rgba(80, 68, 92, 0.36);
+  box-shadow:         0px 4px 5px 0px rgba(80, 68, 92, 0.36);
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4c333f;
+  font-family: 'Amiko', sans-serif;
+}
+
+nav a:visited {
+  color: #4c333f;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: #9d8d95;
+  text-decoration: none;
+}
+
+/* Hero styling */
+#hero {
+  background-color: #f1dede;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
 }
