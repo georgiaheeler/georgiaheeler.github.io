@@ -25,6 +25,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2pt;
+  margin: 10px;
 }
 
 h2 {
@@ -34,6 +35,7 @@ h2 {
   font-size: 2em;
   font-weight: 600;
   line-height: 1.5em;
+
 }
 
 h3 {
@@ -50,6 +52,7 @@ h5 {
   font-size: 2em;
   font-weight: 600;
   line-height: 1.5em;
+    margin: 10px;
 }
 
 figcaption {
@@ -59,7 +62,6 @@ figcaption {
 img {
   width: 100%;
 }
-
 
 a {
   color: #c2025b;
@@ -83,7 +85,6 @@ a:active {
   /* selected link */
   color: #80013c;
 }
-
 
 .button,
 .button:visited {
@@ -113,12 +114,18 @@ a:active {
   color: #8e2c48;
 }
 
+.swot-summary {
+  /*
+  display: inline-block;
+  width: 40%;
+  */
+}
+
 footer {
   background-color: #f1dede;
 }
 
-#contact {
-}
+#contact {}
 
 #social-media {
   display: inline-block;
@@ -126,13 +133,12 @@ footer {
 }
 
 .icon {
-  fill: #291e21;
-    max-width: 250px;
+  fill: #4c333f;
+  width: 25px;
 }
 
-
 .icon:visited {
-  fill: #291e21;
+  fill: #4c333f;
 }
 
 .icon:hover,
@@ -140,7 +146,6 @@ footer {
 .icon:active {
   fill: #9d8d95;
 }
-
 
 /* Layout styling */
 .container {
@@ -152,7 +157,8 @@ footer {
 }
 
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #ded9da;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ded9da;
 }
 
 .logo {
@@ -163,17 +169,21 @@ main {
   padding-top: 133px;
 }
 
+[class*="col-"] {
+float: left;
+padding: 10px;
+}
 
 /* Header styling */
 header {
   background-color: #f1dede;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
   width: 100%;
+  position: fixed;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 68, 92, 0.36);
-  -moz-box-shadow:    0px 4px 5px 0px rgba(80, 68, 92, 0.36);
-  box-shadow:         0px 4px 5px 0px rgba(80, 68, 92, 0.36);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(80, 68, 92, 0.36);
+  box-shadow: 0px 4px 5px 0px rgba(80, 68, 92, 0.36);
 }
 
 nav {
@@ -181,16 +191,16 @@ nav {
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -215,4 +225,88 @@ nav a:active {
   display: inline-block;
   width: 100%;
   padding: 20px 0;
+}
+
+#hero span {
+  display: block;
+}
+
+
+
+
+/* Media queries
+  ==============================
+  Medium devices (640px and larger)
+  ================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 1.125em;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-page h3 {
+  margin-top: 0;}
+
+}
+
+/* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+@media only screen and (min-width: 1024px) {
+
+  .col-md-7 {
+    width: 58%;
+  }
+
+  .col-md-5 {
+    width: 42%;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+}
+
+/* ==============================
+  X-large devices (1440px or larger)
+  ================================= */
+@media only screen and (min-width: 1440px) {
+
+  .col-md-8 {
+    width: 67%;
+  }
+
+  .col-md-4 {
+    width: 33%;
+  }
+
+
 }
