@@ -14,11 +14,11 @@
 
 <body id="knitcase">
   <header>
-    <div>
+    <div class="container">
       <a href="index.html">
         <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 558 558">
           <g id="Group_5" data-name="Group 5" transform="translate(-14 -378)">
-            <circle id="Ellipse_1" data-name="Ellipse 1" cx="279" cy="279" r="279" transform="translate(14 378)" fill="#4c333f" />
+            <circle id="Ellipse_1" data-name="Ellipse 1" cx="279" cy="279" r="279" transform="translate(14 378)" />
             <g id="Group_3" data-name="Group 3" transform="translate(144 509)" opacity="0.7">
               <path id="Path_1" data-name="Path 1"
                 d="M4.3,34.754Q4.3-6.36,31.8-35.748T99.266-65.137q20.557,0,68.621,13.029,1.158,33.008,1.158,35.9,0,4.343-6.08,4.343-2.9,0-3.764-1.448-7.818-39.667-59.066-39.667-28.954,0-48.353,24.611T32.382,30.99q0,32.139,21.281,59.211t53.42,27.072q25.48,0,37.64-6.37,2.027-.869,2.027-4.343l-.29-23.742V80.791q0-18.82-2.316-24.9-1.158-2.9-9.41-4.633a66.953,66.953,0,0,0-12.885-1.737q-1.158,0-1.158-3.619t1.158-4.777q37.061,1.448,37.93,1.448,2.316,0,31.27-1.448a12.832,12.832,0,0,1,.579,4.054q0,4.343-1.158,4.343-1.737,0-7.962,1.882a49.479,49.479,0,0,0-8.831,3.33c-1.93,1.351-5.212,8.038-5.212,19.62,0,4.054-.29,3.737,0,8.466s0,29.07,0,29.649c0,1.544-2.268,4.565-5.646,5.819s-5.55,2.075-6.515,2.461-3.137,1.11-6.515,2.172a76.2,76.2,0,0,1-8.107,2.172q-3.04.579-8.686,1.737a92.962,92.962,0,0,1-10.713,1.592q-5.067.434-11.871.869t-14.332.434q-38.219,0-65-28.085T4.3,34.754Z"
@@ -32,7 +32,7 @@
       </a>
       <nav>
         <ul>
-          <li><a href="index.html">Work</a></li>
+          <li><a href="#work">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -41,7 +41,7 @@
   </header>
   <main class="container">
     <div>
-      <div>
+      <div class="title">
         <h1>Knitcase
         </h1>
         <h5>Knitting project, pattern and tutorial app
@@ -49,11 +49,11 @@
         <h3>
           Concept app design
         </h3>
+      </div>
         <picture>
           <source srcset="img/knitcase/knit.jpg" media="(max-width:767px)">
           <img src="img/knitcase/knit@2x.jpg" alt="Image of Knitcase project">
         </picture>
-      </div>
       <div>
         <h2>Overview
         </h2>
@@ -77,7 +77,7 @@
           The social element allows knitters to share and download each other’s patterns, as well as to showcase projects. The educational element allows users to learn new stitches and follow patterns via video tutorials.
         </p>
       </div>
-      <div>
+      <div id="why-knitting">
         <h3>Why knitting?
         </h3>
         <picture>
@@ -85,9 +85,10 @@
           <img src="img/knitcase/pngs/background.png" alt="Infographic of knitting stats">
         </picture>
         <figcaption>Infographic by <a href="https://www.woolandthegang.com/en" target="_blank">Wool & the Gang</a></figcaption>
-        <p>Owing to the increasing popularity of knitting and its growing digital presence, I wanted to design an app where knitters could do all of the above, all in one place.
-        </p>
       </div>
+      <p>Owing to the increasing popularity of knitting and its growing digital presence, I wanted to design an app where knitters could do all of the above, all in one place.
+      </p>
+
       <div>
         <h2>Approach
         </h2>
@@ -96,7 +97,7 @@
           <img src="img/knitcase/pngs/process@2x.png" alt="Image of design process">
         </picture>
       </div>
-      <div>
+      <div id="competitor">
         <h2>Competitor Analysis
         </h2>
         <p>There were few good quality knitting apps on the market. I found three that corresponded with my objective: The Knitting App, Knitting Genius and LoveKnitting
@@ -153,7 +154,7 @@
             <img src="img/knitcase/jpgs/low-fi sketches.jpg" alt="Image of low-fidelity sketches">
           </picture>
         </div>
-        <div>
+        <div id="mid-fi">
           <h3>Mid-fidelity wireframes
           </h3>
           <p>From there, I narrowed down the best options and used Marvel prototyping tool to test the flows and navigation. This was really helpful as I could quickly see what screens or element were missing, before bringing them to life in Adobe
@@ -165,154 +166,171 @@
           </picture>
         </div>
       </div>
-        <div>
-          <h2>Testing & Feedback
-          </h2>
-          <h4> Round 1
-          </h4>
-          <p>
-            Before progressing to high-fidelity screens, I made sure to receive feedback from peers and conducted two usability test sessions. Overall, the feedback highlighted that, although tasks seemed easy to complete, there was a lack of
-            memorability and confidence and in having completed them correctly.It appeared I had added too many routes to complete the 'add new project' task.
-          </p>
-          <p>
-            In their place, I created a new route, which encompassed the former task and 'add new pattern' task, under one button on the bottom nav bar. This made the interface cleaner and removed the confusing and unnecessary ‘+’ button on Profile;
-            it also made the tasks a lot quicker and easier to complete.
-          </p>
-          <h4>Changes
-          </h4>
+      <div class="testing">
+        <h2>Testing & Feedback
+        </h2>
+        <h4> Round 1
+        </h4>
+        <p>
+          Before progressing to high-fidelity screens, I made sure to receive feedback from peers and conducted two usability test sessions. Overall, the feedback highlighted that, although tasks seemed easy to complete, there was a lack of
+          memorability and confidence and in having completed them correctly.It appeared I had added too many routes to complete the 'add new project' task.
+        </p>
+        <p>
+          In their place, I created a new route, which encompassed the former task and 'add new pattern' task, under one button on the bottom nav bar. This made the interface cleaner and removed the confusing and unnecessary ‘+’ button on Profile;
+          it also made the tasks a lot quicker and easier to complete.
+        </p>
+        <h4>Changes
+        </h4>
+        <picture>
+          <img src="img/knitcase/jpgs/testing/1.jpg" alt="Image of testing changes" id="odd-image-testing">
+          <img src="img/knitcase/jpgs/testing/2.jpg" alt="Image of testing changes">
+          <img src="img/knitcase/jpgs/testing/3.jpg" alt="Image of testing changes">
+        </picture>
+      </div>
+      <div>
+        <h2>Visual Design
+        </h2>
+        <h3>Logo development
+        </h3>
+        <picture>
+          <source srcset="img/knitcase/jpgs/logo.jpg" media="(max-width:767px)">
+          <img src="img/knitcase/jpgs/logo.jpg" alt="Logo ideation">
+        </picture>
+        <picture>
+          <source srcset="img/knitcase/pngs/final-logo.png" media="(max-width:767px)">
+          <img src="img/knitcase/pngs/final-logo@2x.png" alt="Final Knitcase logo design">
+        </picture>
+
+        <h3>Style guide
+        </h3>
+        <picture>
+          <source srcset="img/knitcase/jpgs/style guide.jpg" media="(max-width:767px)">
+          <img src="img/knitcase/jpgs/style guide.jpg" alt="Style guide">
+        </picture>
+      </div>
+      <div class="testing">
+        <h2>Testing & Feedback
+        </h2>
+        <h4>Round 2
+        </h4>
+        <p>Now that I'd iterated upon my mid-fidelity wireframes and applied Knitcase's style guide to all screens, I could conduct another round of usability testing and feedback, using a more realistic, high-fidelity prototype.
+          I conducted task-based moderated usability testing sessions with two participants, and received task-based unmoderated testing feedback from three other participants (five total).
+        </p>
+        <picture>
+          <source srcset="img/knitcase/pngs/testing.png" media="(max-width:767px)">
+          <img src="img/knitcase/pngs/testing@2x.png" alt="Testing tasks">
+        </picture>
+        <h3>Results synthesis
+        </h3>
+        <p>
+          There was no consensus around design or flow errors. Each participant brought up different problems or made different suggestions. I catered for each appropriately, depending on the time and effort required to make the changes, whether
+          the suggestion was necessary or added value in terms of ease and efficiency vs being a want, and whether the suggestion compromised other actions or visuals, e.g. added clutter.
+        </p>
+        <picture>
+          <source srcset="img/knitcase/pngs/quotes.png" media="(max-width:767px)">
+          <img src="img/knitcase/pngs/quotes@2x.png" alt="Positive quotes by users during testing">
+        </picture>
+        <h4>Changes
+        </h4>
+        <picture>
+          <img src="img/knitcase/jpgs/testing/1a.jpg" alt="Changes made from testing">
+          <img src="img/knitcase/jpgs/testing/2a.jpg" alt="Changes made from testing">
+          <img src="img/knitcase/jpgs/testing/3a.jpg" alt="Changes made from testing">
+          <img src="img/knitcase/jpgs/testing/4a.jpg" alt="Changes made from testing">
+        </picture>
+      </div>
+      <div id="final-screens">
+        <h2>Final screens
+        </h2>
+        <picture>
+          <source srcset="img/knitcase/jpgs/final screens.jpg" media="(max-width:767px)">
+          <img src="img/knitcase/jpgs/final screens.jpg" alt="Final screens">
+        </picture>
+      </div>
+      <div id="gif-flows">
+        <!-- Start row-->
+        <div class="row">
+          <!-- Start column-->
+          <div class="col-4">
+            <figcaption>Searching for & viewing patterns
+            </figcaption>
             <picture>
-              <img src="img/knitcase/jpgs/testing/1.jpg" alt="Image of testing changes">
-              <img src="img/knitcase/jpgs/testing/2.jpg" alt="Image of testing changes">
-              <img src="img/knitcase/jpgs/testing/3.jpg" alt="Image of testing changes">
+              <source srcset="img/knitcase/gifs/1.gif" media="(max-width:767px)">
+              <img src="img/knitcase/gifs/1.gif" alt="Gif of user flow">
             </picture>
+            <!--end column-->
+          </div>
+          <!-- Start column-->
+          <div class="col-4">
+            <figcaption>
+              Searching for & viewing tutorials
+            </figcaption>
+            <picture>
+              <source srcset="img/knitcase/gifs/2.gif" media="(max-width:767px)">
+              <img src="img/knitcase/gifs/2.gif" alt="Gif of user flow">
+            </picture>
+            <!--end column-->
+          </div>
+          <!-- Start column-->
+          <div class="col-4">
+            <figcaption>
+              Creating & publishing a project
+            </figcaption>
+            <picture>
+              <source srcset="img/knitcase/gifs/3.gif" media="(max-width:767px)">
+              <img src="img/knitcase/gifs/3.gif" alt="Gif of user flow">
+            </picture>
+            <!--end column-->
+          </div>
+          <!--end row-->
         </div>
-        <div>
-          <h2>Visual Design
-          </h2>
-          <h3>Logo development
-          </h3>
-          <picture>
-            <source srcset="img/knitcase/jpgs/logo.jpg" media="(max-width:767px)">
-            <img src="img/knitcase/jpgs/logo.jpg" alt="Logo ideation">
-          </picture>
-          <picture>
-            <source srcset="img/knitcase/pngs/final-logo.png" media="(max-width:767px)">
-            <img src="img/knitcase/pngs/final-logo@2x.png" alt="Final Knitcase logo design">
-          </picture>
+      </div>
 
-          <h3>Style guide
-          </h3>
-          <picture>
-            <source srcset="img/knitcase/jpgs/style guide.jpg" media="(max-width:767px)">
-            <img src="img/knitcase/jpgs/style guide.jpg" alt="Style guide">
-          </picture>
-        </div>
-        <div>
-          <h2>Testing & Feedback
-          </h2>
-          <h4>Round 2
-          </h4>
-          <p>Now that I'd iterated upon my mid-fidelity wireframes and applied Knitcase's style guide to all screens, I could conduct another round of usability testing and feedback, using a more realistic, high-fidelity prototype.
-            I conducted task-based moderated usability testing sessions with two participants, and received task-based unmoderated testing feedback from three other participants (five total).
-          </p>
-          <picture>
-            <source srcset="img/knitcase/pngs/testing.png" media="(max-width:767px)">
-            <img src="img/knitcase/pngs/testing@2x.png" alt="Testing tasks">
-          </picture>
-          <h3>Results synthesis
-          </h3>
-          <p>
-            There was no consensus around design or flow errors. Each participant brought up different problems or made different suggestions. I catered for each appropriately, depending on the time and effort required to make the changes, whether
-            the suggestion was necessary or added value in terms of ease and efficiency vs being a want, and whether the suggestion compromised other actions or visuals, e.g. added clutter.
-          </p>
-          <picture>
-            <source srcset="img/knitcase/pngs/quotes.png" media="(max-width:767px)">
-            <img src="img/knitcase/pngs/quotes@2x.png" alt="Positive quotes by users during testing">
-          </picture>
-          <h4>Changes
-          </h4>
-          <picture>
-            <img src="img/knitcase/jpgs/testing/1a.jpg" alt="Changes made from testing">
-            <img src="img/knitcase/jpgs/testing/2a.jpg" alt="Changes made from testing">
-            <img src="img/knitcase/jpgs/testing/3a.jpg" alt="Changes made from testing">
-            <img src="img/knitcase/jpgs/testing/4a.jpg" alt="Changes made from testing">
-          </picture>
-        </div>
-        <div>
-          <h2>Final screens
-          </h2>
-          <picture>
-            <source srcset="img/knitcase/jpgs/final screens.jpg" media="(max-width:767px)">
-            <img src="img/knitcase/jpgs/final screens.jpg" alt="Final screens">
-          </picture>
-        </div>
-        <div class="gif.flows">
-          <figcaption>Searching for & viewing patterns
-          </figcaption>
-          <picture>
-            <source srcset="img/knitcase/gifs/1.gif" media="(max-width:767px)">
-            <img src="img/knitcase/gifs/1.gif" alt="Gif of user flow">
-          </picture>
-          <figcaption>
-            Searching for & viewing tutorials
-          </figcaption>
-          <picture>
-            <source srcset="img/knitcase/gifs/2.gif" media="(max-width:767px)">
-            <img src="img/knitcase/gifs/2.gif" alt="Gif of user flow">
-          </picture>
-          <figcaption>
-            Creating & publishing a project
-          </figcaption>
-          <picture>
-            <source srcset="img/knitcase/gifs/3.gif" media="(max-width:767px)">
-            <img src="img/knitcase/gifs/3.gif" alt="Gif of user flow">
-          </picture>
-        </div>
+      <div id="android">
+        <p>I also designed a native app version for Android:
+          <a href="https://xd.adobe.com/view/ce4b10b1-35fb-4267-ad35-3b033e01e61b-9b18/" id="android-link" target="_blank">Click to view Android prototype</a>
+        </p>
+        <picture>
+          <source srcset="img/knitcase/pngs/android.png" media="(max-width:767px)">
+          <img src="img/knitcase/pngs/android@2x.png" alt="Preview of Android screens">
+        </picture>
 
-        <div>
-          <p>I also designed a native app version for Android:
-          </p>
-          <picture>
-            <source srcset="img/knitcase/pngs/android.png" media="(max-width:767px)">
-            <img src="img/knitcase/pngs/android@2x.png" alt="Preview of Android screens">
-          </picture>
-          <a href="https://xd.adobe.com/view/ce4b10b1-35fb-4267-ad35-3b033e01e61b-9b18/" target="_blank">Click to view Android prototype</a>
-        </div>
-        <div>
-          <h2>
-            Reflection
-          </h2>
-          <h3> What went well
-          </h3>
-          <h4> Testing early & often
-          </h4>
-          <p>I made sure to conduct two rounds of testing to verify my design decisions. The earlier rounds of testing and feedback with my mid-fidelity prototypes proved beneficial, as the '+' bottom nav bar button that came out of this received an
-            all-round positive response during the final round of testing and feedback. All participants used this route to complete the 'create new project' task.
-          </p>
-          <h4> Colour & spacing
-          </h4>
-          <p>
-            I carried forward learnings from my previous projects and, this time, felt I was successful at using colour (using less of it and having variations of one main hue) and spacing (ensuring increments of 8px and letting elements breathe)
-            more effectively.
-          </p>
-          <h3> Challenges and what I’d do differently
-          </h3>
-          <h4> Test more Representative users
-          </h4>
-          <p>
-            Although testing was extremely beneficial, only one of my participants represented my target user audience, i.e. they knitted. Because of this, there might have been a lack of confidence in navigating the app and completing tasks, which
-            may have negatively affected usability test findings. For instance, a couple of participants voiced confusion about what 'patterns' were.
-            Even though participants successfully completed tasks, this observation demonstrates the importance of testing the correct user group so a lack of confidence in this area doesn’t potentially impact results. Next time, I should account for
-            this by allowing myself extra time to recruit more representative users.
-          </p>
-          <h3> Further development
-          </h3>
-          <p>
-            Further development of Knitcase could surround designing the app from a business perspective. For instance, what it's Key Performace Indicators would be, how they'd inform business objectives, and how designs would be adapted to improve
-            metrics. For example, Knitcase could be offered on a 'freemium' basis offering a selection of free patterns, with users having to upgrade to a premium plan to access all patterns. KPIs would include number of patterns saved and viewed,
-            number of projects created and published, and number of accounts upgraded to premium.
-        </div>
-
+      </div>
+      <div>
+        <h2>
+          Reflection
+        </h2>
+        <h3> What went well
+        </h3>
+        <h4> Testing early & often
+        </h4>
+        <p>I made sure to conduct two rounds of testing to verify my design decisions. The earlier rounds of testing and feedback with my mid-fidelity prototypes proved beneficial, as the '+' bottom nav bar button that came out of this received an
+          all-round positive response during the final round of testing and feedback. All participants used this route to complete the 'create new project' task.
+        </p>
+        <h4> Colour & spacing
+        </h4>
+        <p>
+          I carried forward learnings from my previous projects and, this time, felt I was successful at using colour (using less of it and having variations of one main hue) and spacing (ensuring increments of 8px and letting elements breathe)
+          more effectively.
+        </p>
+        <h3> Challenges and what I’d do differently
+        </h3>
+        <h4> Test more Representative users
+        </h4>
+        <p>
+          Although testing was extremely beneficial, only one of my participants represented my target user audience, i.e. they knitted. Because of this, there might have been a lack of confidence in navigating the app and completing tasks, which
+          may have negatively affected usability test findings. For instance, a couple of participants voiced confusion about what 'patterns' were.
+          Even though participants successfully completed tasks, this observation demonstrates the importance of testing the correct user group so a lack of confidence in this area doesn’t potentially impact results. Next time, I should account for
+          this by allowing myself extra time to recruit more representative users.
+        </p>
+        <h3> Further development
+        </h3>
+        <p>
+          Further development of Knitcase could surround designing the app from a business perspective. For instance, what it's Key Performace Indicators would be, how they'd inform business objectives, and how designs would be adapted to improve
+          metrics. For example, Knitcase could be offered on a 'freemium' basis offering a selection of free patterns, with users having to upgrade to a premium plan to access all patterns. KPIs would include number of patterns saved and viewed,
+          number of projects created and published, and number of accounts upgraded to premium.
+      </div>
+</div>
   </main>
   <footer>
     <div id="contact">
@@ -325,49 +343,44 @@
         <div id="social-media">
           <!--Social Media Layout and Placeholders-->
           <a href="https://www.linkedin.com/in/georgia-heeler/" class="icon" target="_blank">
-            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="98px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
               xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
               <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
             </svg>
           </a>
           <a href="https://www.behance.net/gheeler" class="icon" target="_blank">
-            <svg height="100%" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg height="100%" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="100px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="behance__x2C__social__x2C__media">
                 <g>
-                  <path d="M205.918,215.982c0-11.053-9.094-19.982-20.176-19.982H136v40    h49.743C196.824,236,205.918,227.049,205.918,215.982z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
-                  <path d="M185.743,266H136v50h59.972    c11.071,0,19.86-12.942,19.86-24.021C215.832,270.719,196.824,266,185.743,266z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+                  <path d="M205.918,215.982c0-11.053-9.094-19.982-20.176-19.982H136v40    h49.743C196.824,236,205.918,227.049,205.918,215.982z" />
+                  <path d="M185.743,266H136v50h59.972    c11.071,0,19.86-12.942,19.86-24.021C215.832,270.719,196.824,266,185.743,266z" />
                   <path
-                    d="M434.479,16H77.521C43.717,16,16,43.718,16,77.522v356.955    C16,468.281,43.717,496,77.521,496h356.957C468.286,496,496,468.281,496,434.478V77.522C496,43.718,468.286,16,434.479,16z     M296,166h90v30h-90V166z M195.972,356H96V156h99.972c27.521,0,49.936,22.331,49.936,50.146c0,17.872-9.646,33.703-23.832,42.496    c19.573,6.805,34.058,25.445,34.058,47.293C256.133,329.107,228.88,356,195.972,356z M416,286H306.081    c1.407,22,16.164,40.031,35.179,40.031c18.718,0,29.23-12.031,32.916-30.031h40.576c-6.805,34-28.374,60.123-73.492,60.123    c-45.4,0-75.204-33.466-75.204-75.167c0-41.426,29.717-74.871,75.117-74.871c45.118,0,74.827,33.446,74.827,74.864    C416,282.64,416,284,416,286z"
-                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
-                  <path d="M341.26,236.207c-17.593,0-30.927,11.793-33.213,29.793    h66.129C371.332,248,358.563,236.207,341.26,236.207z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+                    d="M434.479,16H77.521C43.717,16,16,43.718,16,77.522v356.955    C16,468.281,43.717,496,77.521,496h356.957C468.286,496,496,468.281,496,434.478V77.522C496,43.718,468.286,16,434.479,16z     M296,166h90v30h-90V166z M195.972,356H96V156h99.972c27.521,0,49.936,22.331,49.936,50.146c0,17.872-9.646,33.703-23.832,42.496    c19.573,6.805,34.058,25.445,34.058,47.293C256.133,329.107,228.88,356,195.972,356z M416,286H306.081    c1.407,22,16.164,40.031,35.179,40.031c18.718,0,29.23-12.031,32.916-30.031h40.576c-6.805,34-28.374,60.123-73.492,60.123    c-45.4,0-75.204-33.466-75.204-75.167c0-41.426,29.717-74.871,75.117-74.871c45.118,0,74.827,33.446,74.827,74.864    C416,282.64,416,284,416,286z" />
+                  <path d="M341.26,236.207c-17.593,0-30.927,11.793-33.213,29.793    h66.129C371.332,248,358.563,236.207,341.26,236.207z" />
                 </g>
               </g>
               <g id="Layer_1" />
             </svg>
           </a>
           <a href="https://dribbble.com/gheeler" class="icon" target="_blank">
-            <svg height="100%" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="dribbble__x2C__social__x2C__media__x2C__icon__x2C_">
                 <g>
-                  <path d="M248.411,211.093c-23.68-42.097-48.99-76.38-50.799-78.839    c-38.16,18.039-66.618,53.184-75.507,95.539C125.726,227.866,182.728,228.548,248.411,211.093z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
-                  <path d="M171.916,363.852l0.018-0.055    c-1.041-0.809-2.093-1.526-3.091-2.332C170.639,362.891,171.916,363.852,171.916,363.852z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+                  <path d="M248.411,211.093c-23.68-42.097-48.99-76.38-50.799-78.839    c-38.16,18.039-66.618,53.184-75.507,95.539C125.726,227.866,182.728,228.548,248.411,211.093z" />
+                  <path d="M171.916,363.852l0.018-0.055    c-1.041-0.809-2.093-1.526-3.091-2.332C170.639,362.891,171.916,363.852,171.916,363.852z" />
                   <path
-                    d="M265.438,257.066c1.781-0.591,3.576-1.13,5.394-1.641    c-3.432-7.777-7.182-15.563-11.1-23.25c-70.434,21.075-138.021,19.539-140.437,19.486c-0.063,1.429-0.118,2.873-0.118,4.327    c0,35.146,13.263,67.185,35.058,91.438c-0.018-0.015-0.065-0.087-0.065-0.087S191.618,280.917,265.438,257.066z"
-                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
-                  <path d="M346.33,153.318c-24.107-21.201-55.718-34.131-90.352-34.131    c-11.115,0-21.91,1.366-32.233,3.844c2.057,2.738,27.748,36.86,51.136,79.827C326.514,183.517,346.008,153.857,346.33,153.318z"
-                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
-                  <path d="M223.223,123.156c-0.144,0.062-0.305,0.081-0.448,0.145    c0.25-0.063,0.415-0.1,0.415-0.1S223.215,123.176,223.223,123.156z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+                    d="M265.438,257.066c1.781-0.591,3.576-1.13,5.394-1.641    c-3.432-7.777-7.182-15.563-11.1-23.25c-70.434,21.075-138.021,19.539-140.437,19.486c-0.063,1.429-0.118,2.873-0.118,4.327    c0,35.146,13.263,67.185,35.058,91.438c-0.018-0.015-0.065-0.087-0.065-0.087S191.618,280.917,265.438,257.066z" />
+                  <path d="M346.33,153.318c-24.107-21.201-55.718-34.131-90.352-34.131    c-11.115,0-21.91,1.366-32.233,3.844c2.057,2.738,27.748,36.86,51.136,79.827C326.514,183.517,346.008,153.857,346.33,153.318z" />
+                  <path d="M223.223,123.156c-0.144,0.062-0.305,0.081-0.448,0.145    c0.25-0.063,0.415-0.1,0.415-0.1S223.215,123.176,223.223,123.156z" />
                   <path
-                    d="M434.478,16H77.521C43.72,16,16,43.719,16,77.521v356.957    C16,468.282,43.72,496,77.521,496h356.957C468.281,496,496,468.282,496,434.479V77.521C496,43.719,468.281,16,434.478,16z     M412.905,288.263c-2.104,10.288-5.242,20.408-9.338,30.061c-4.022,9.537-8.999,18.671-14.781,27.246    c-5.728,8.474-12.294,16.443-19.541,23.68c-7.255,7.255-15.217,13.817-23.705,19.566c-8.564,5.765-17.725,10.752-27.217,14.761    c-9.668,4.095-19.799,7.247-30.108,9.348c-10.526,2.173-21.369,3.25-32.236,3.25c-10.847,0-21.72-1.096-32.252-3.25    c-10.293-2.101-20.417-5.253-30.099-9.348c-9.499-4.009-18.65-8.996-27.208-14.761c-8.497-5.749-16.459-12.312-23.724-19.566    c-7.222-7.236-13.795-15.206-19.533-23.68c-5.791-8.575-10.765-17.709-14.761-27.246c-4.086-9.652-7.255-19.772-9.365-30.061    c-2.155-10.552-3.23-21.409-3.23-32.273c0-2.488,0.053-4.966,0.178-7.452c0.386-8.342,1.398-16.666,3.053-24.773    c2.11-10.318,5.279-20.446,9.365-30.119c3.996-9.5,8.97-18.652,14.761-27.208c5.738-8.466,12.312-16.457,19.533-23.696    c7.265-7.255,15.227-13.829,23.724-19.564c8.558-5.793,17.709-10.759,27.208-14.781c9.682-4.07,19.799-7.229,30.099-9.321    c10.551-2.163,21.405-3.267,32.252-3.267c10.867,0,21.71,1.104,32.236,3.258c10.31,2.095,20.44,5.253,30.108,9.33    c9.492,4.022,18.652,8.978,27.217,14.762c8.488,5.738,16.45,12.329,23.705,19.566c7.247,7.246,13.813,15.228,19.541,23.696    c5.782,8.559,10.759,17.709,14.781,27.217c4.096,9.652,7.233,19.81,9.338,30.128c1.763,8.564,2.774,17.394,3.104,26.246    c0.073,1.984,0.167,3.979,0.167,5.979C416.177,266.839,415.06,277.711,412.905,288.263z"
-                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+                    d="M434.478,16H77.521C43.72,16,16,43.719,16,77.521v356.957    C16,468.282,43.72,496,77.521,496h356.957C468.281,496,496,468.282,496,434.479V77.521C496,43.719,468.281,16,434.478,16z     M412.905,288.263c-2.104,10.288-5.242,20.408-9.338,30.061c-4.022,9.537-8.999,18.671-14.781,27.246    c-5.728,8.474-12.294,16.443-19.541,23.68c-7.255,7.255-15.217,13.817-23.705,19.566c-8.564,5.765-17.725,10.752-27.217,14.761    c-9.668,4.095-19.799,7.247-30.108,9.348c-10.526,2.173-21.369,3.25-32.236,3.25c-10.847,0-21.72-1.096-32.252-3.25    c-10.293-2.101-20.417-5.253-30.099-9.348c-9.499-4.009-18.65-8.996-27.208-14.761c-8.497-5.749-16.459-12.312-23.724-19.566    c-7.222-7.236-13.795-15.206-19.533-23.68c-5.791-8.575-10.765-17.709-14.761-27.246c-4.086-9.652-7.255-19.772-9.365-30.061    c-2.155-10.552-3.23-21.409-3.23-32.273c0-2.488,0.053-4.966,0.178-7.452c0.386-8.342,1.398-16.666,3.053-24.773    c2.11-10.318,5.279-20.446,9.365-30.119c3.996-9.5,8.97-18.652,14.761-27.208c5.738-8.466,12.312-16.457,19.533-23.696    c7.265-7.255,15.227-13.829,23.724-19.564c8.558-5.793,17.709-10.759,27.208-14.781c9.682-4.07,19.799-7.229,30.099-9.321    c10.551-2.163,21.405-3.267,32.252-3.267c10.867,0,21.71,1.104,32.236,3.258c10.31,2.095,20.44,5.253,30.108,9.33    c9.492,4.022,18.652,8.978,27.217,14.762c8.488,5.738,16.45,12.329,23.705,19.566c7.247,7.246,13.813,15.228,19.541,23.696    c5.782,8.559,10.759,17.709,14.781,27.217c4.096,9.652,7.233,19.81,9.338,30.128c1.763,8.564,2.774,17.394,3.104,26.246    c0.073,1.984,0.167,3.979,0.167,5.979C416.177,266.839,415.06,277.711,412.905,288.263z" />
                   <path
-                    d="M361.631,169.114c-0.269,0.35-22.192,32.101-76.216,54.129    c0.881,1.813,1.729,3.663,2.594,5.504c2.234,4.73,4.436,9.51,6.492,14.329c0.994,2.381,1.978,4.725,2.946,7.067    c47.015-5.916,93.305,4.06,95.289,4.5c-0.051-3.673-0.239-7.3-0.555-10.893C389.667,215.527,378.64,189.776,361.631,169.114z"
-                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+                    d="M361.631,169.114c-0.269,0.35-22.192,32.101-76.216,54.129    c0.881,1.813,1.729,3.663,2.594,5.504c2.234,4.73,4.436,9.51,6.492,14.329c0.994,2.381,1.978,4.725,2.946,7.067    c47.015-5.916,93.305,4.06,95.289,4.5c-0.051-3.673-0.239-7.3-0.555-10.893C389.667,215.527,378.64,189.776,361.631,169.114z" />
                   <path
-                    d="M279.273,278.403    c-80.762,28.113-107.089,84.847-107.34,85.394c23.201,18.112,52.333,29.002,84.045,29.002c18.938,0,36.996-3.878,53.41-10.835    c-2.021-11.953-9.969-53.843-29.22-103.857C279.861,278.186,279.56,278.276,279.273,278.403z"
-                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
-                  <path d="M305.779,271.729c17.959,49.319,25.232,89.453,26.65,97.717    c30.696-20.724,52.522-53.625,58.609-91.734C388.238,276.797,349.958,264.691,305.779,271.729z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;" />
+                    d="M279.273,278.403    c-80.762,28.113-107.089,84.847-107.34,85.394c23.201,18.112,52.333,29.002,84.045,29.002c18.938,0,36.996-3.878,53.41-10.835    c-2.021-11.953-9.969-53.843-29.22-103.857C279.861,278.186,279.56,278.276,279.273,278.403z" />
+                  <path d="M305.779,271.729c17.959,49.319,25.232,89.453,26.65,97.717    c30.696-20.724,52.522-53.625,58.609-91.734C388.238,276.797,349.958,264.691,305.779,271.729z" />
                 </g>
               </g>
               <g id="Layer_1" />
