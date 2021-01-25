@@ -302,6 +302,7 @@ nav a:active {
 
 /* Keyframes animation */
 
+
 @keyframes cloud-move {
   from {
     transform: translate(0, 50px);
