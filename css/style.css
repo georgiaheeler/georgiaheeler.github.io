@@ -13,6 +13,10 @@ White-pink: #fffcfd;
   box-sizing: border-box;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -52,11 +56,6 @@ h5 {
   font-weight: 600;
   line-height: 1.5em;
   margin: 20px 0;
-}
-
-
-h5 {
-
 }
 
 figcaption {
@@ -116,40 +115,6 @@ a:active {
   /*  opacity: 0.8; */
 }
 
-.swot-summary {
-  /*
-  display: inline-block;
-  width: 40%;
-  */
-}
-
-/* Footer */
-footer {
-  background-color: #f1dede;
-  padding: 50px 15px;
-  margin-top: 50px;
-}
-
-#contact {}
-
-#social-media {
-  display: inline-block;
-  width: 100%;
-}
-
-.icon,
-.icon:visited {
-  fill: #4c333f;
-  padding: 5px;
-  transition: 0.5s fill;
-}
-
-.icon:hover,
-.icon:focus,
-.icon:active {
-  fill: #9d8d95;
-  text-decoration: none;
-}
 
 /* Layout styling */
 .container {
@@ -157,7 +122,8 @@ footer {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 50px 0;
+  clear: both;
 }
 
 #work {
@@ -169,8 +135,51 @@ footer {
   border-bottom: 1px solid #ded9da;
 }
 
+#work > picture {
+  position: relative;
+}
+
+#work img {
+  transition: 0.5s opacity;
+  display: block;
+}
+
+#work img:hover {
+  background-color: #000;
+  opacity: 20%;
+}
+
+#work > .overlay-button {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+}
+
+#work picture:hover a.overlay-button {
+  opacity: 100%;
+  visibility: visible;
+  top: 50%;
+  left: 50%;
+  text-transform: uppercase;
+  font-family: 'Amiko', sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+
+.rowknitcase {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.rowvtime {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
 main {
-  padding-top: 150px;
+  padding-top: 130px;
 }
 
 [class*="col-"] {
@@ -181,7 +190,6 @@ main {
 /* Header and navbar styling */
 header {
   background-color: #f1dede;
-  text-align: center;
   padding: 10px 0;
   width: 100%;
   position: fixed;
@@ -190,18 +198,10 @@ header {
   box-shadow: 0px 4px 5px 0px rgba(80, 68, 92, 0.36);
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -211,6 +211,40 @@ nav>ul>li>a {
   color: #4c333f;
   font-family: 'Amiko', sans-serif;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+
+.navtoggle li .icon, .navtoggle li .icon:visited {
+  color: #4c333f;
+  position: absolute;
+padding-top: 40px;
+    padding-right: 0;
+  right: 0;
+  top: 2px;
+  font-size: 24px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 
 nav a:visited {
   color: #4c333f;
@@ -242,8 +276,7 @@ nav a:active {
   display: inline-block;
   width: 100%;
   height: 60%;
-  padding: 20px 10px;
-  padding-top: 70px;
+  padding: 50px 10px;
 }
 
 #hero p {
@@ -263,6 +296,55 @@ nav a:active {
   padding: 0 10px;
 }
 
+
+#about-page h2 {
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #f1dede;
+  padding: 50px 10px;
+  clear: both;
+}
+
+footer h1 {
+  padding: 0;
+}
+
+#social-media {
+  display: block;
+  width: 100%;
+  margin-left: -5px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#social-media a {
+    font-size: 60px;
+}
+
+#social-media a,
+#social-media a:visited {
+  color: #4c333f;
+  padding: 5px;
+  transition: 0.5s color;
+
+}
+
+#social-media a:hover,
+#social-media a:focus,
+#social-media a:active {
+  color: #9d8d95;
+  text-decoration: none;
+}
+
+/*Work-page*/
+
+#work-page #work {
+  padding-top: 0;
+}
+
 /*Knitcase*/
 .title {
   padding-top: 240px;
@@ -275,9 +357,8 @@ nav a:active {
   padding-top: 30px;
 }
 
-
 #knitcase h1 {
-  padding: 0
+  padding: 0;
 }
 
 #knitcase .container {
@@ -304,38 +385,48 @@ nav a:active {
   padding: 10px 0;
 }
 
-/* Keyframes animation */
-
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
+.scrollToTopBtn {
+	border: none;
+	background-color: #ffffff;
+	color: #433237;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 30px;
+	width: 10%;
+	/* place it at the bottom right corner */
+	position: fixed;
+	bottom: 30px;
+	right: 25px;
+	/* keep it at the top of everything else */
+	z-index: 100;
+	/* hide with opacity */
+	opacity: 0;
+	/* also add a translate effect */
+	transform: translateY(100px);
+	/* and a transition */
+	transition: all 0.5s ease;
 }
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+.showBtn {
+	opacity: 1;
+	transform: translateY(0);
 }
 
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+.scrollToTopBtn span {
+	display: block;
 }
 
 /* Media queries
+==============================
+Small-Medium devices (400px and larger)
+================================= */
+@media only screen and (min-width: 400px) {
+#hero {
+  height: 80vh;
+  padding-top: 120px;
+}
+
+/*
   ==============================
   Medium devices (640px and larger)
   ================================= */
@@ -347,7 +438,27 @@ nav a:active {
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 1.3em;
+  }
+
+  nav > ul {
+  margin: 1em 0;
+}
+
+
+/*ensures menu links aren't hidden*/
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+/*ensures hamburger menu is hidden*/
+.navtoggle li:last-child {
+  display: none;
+}
+
+
+  .logo {
+    padding-top: 0;
   }
 
   main {
@@ -358,14 +469,18 @@ nav a:active {
     font-size: 1.125em;
   }
 
-#hero {
-  padding: 8.5em 0;
-}
+  #hero {
+    padding-top: 10em;
+    height: 90vh;
+  }
 
-#hero p {
-  padding: 2em, 0;
-}
+  #hero p {
+    padding: 2em, 0;
+  }
 
+  #work {
+    padding: 2em 0;
+  }
 
   .col-md-6 {
     width: 50%;
@@ -380,9 +495,9 @@ nav a:active {
     padding: 40px 0;
   }
 
-    #gif-flows figcaption {
-  font-size: 0.8em;
-  text-align: center;
+  #gif-flows figcaption {
+    font-size: 0.8em;
+    text-align: center;
   }
 
   .row::after {
@@ -414,8 +529,6 @@ nav a:active {
     padding-top: 160px;
     padding-bottom: 40px;
   }
-
-
 }
 
 /* ==============================
@@ -437,14 +550,15 @@ nav a:active {
   }
 
   #hero {
-    padding: 6em 0;
-      font-size: 1.5em;
-}
+    padding: 5em 10px;
+    font-size: 1.5em;
+    line-height: 1.5em;
 
+  }
 
-#hero p {
-  padding: 0.75em 0;
-}
+  #hero p {
+    padding: 0.75em, 0;
+  }
 
   #about-page footer h1 {
     max-width: 1200px;
@@ -472,13 +586,13 @@ nav a:active {
   }
 
   #competitor img {
-  width: 70%;
-  margin-left: -17px;
+    width: 70%;
+    margin-left: -17px;
   }
 
   #mid-fi img {
-  width: 80%;
-  padding: 20px 0;
+    width: 80%;
+    padding: 20px 0;
   }
 
   .testing img {
@@ -492,7 +606,6 @@ nav a:active {
   #final-screens img {
     width: 100%;
   }
-
 }
 
 /* ==============================
@@ -507,4 +620,9 @@ nav a:active {
     width: 33%;
   }
 
+  #hero {
+    padding-top: 6em;
+  }
 }
+
+<script src="js/scripts.js"></script>
