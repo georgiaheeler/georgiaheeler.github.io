@@ -135,7 +135,7 @@ a:active {
   border-bottom: 1px solid #ded9da;
 }
 
-#work > picture {
+#work > img {
   position: relative;
 }
 
@@ -156,7 +156,7 @@ a:active {
   text-align: center;
 }
 
-#work picture:hover a.overlay-button {
+#work img:hover a.overlay-button {
   opacity: 100%;
   visibility: visible;
   top: 50%;
@@ -185,11 +185,12 @@ main {
 [class*="col-"] {
   float: left;
   padding: 10px;
+
 }
 
 /* Header and navbar styling */
 header {
-  background-color: #f1dede;
+  background-color: #f0e4e4;
   padding: 10px 0;
   width: 100%;
   position: fixed;
@@ -272,7 +273,7 @@ nav a:active {
 
 /* Hero styling */
 #hero {
-  background-color: #fcf2f2;
+  background-color: #faf2f2;
   display: inline-block;
   width: 100%;
   height: 60%;
@@ -289,7 +290,7 @@ nav a:active {
 
 /*About*/
 #about-page main {
-  padding-top: 230px;
+  padding-top: 210px;
 }
 
 #about-page img {
@@ -298,13 +299,19 @@ nav a:active {
 
 
 #about-page h2 {
-  margin-top: 0;
+  margin: 10px 0;
+}
+
+#about-page h3 {
+  margin-top: 20px;
+  margin-bottom: -10px;
 }
 
 /* Footer */
 footer {
-  background-color: #f1dede;
+  background-color: #f0e4e4;
   padding: 50px 10px;
+  padding-bottom: 80px;
   clear: both;
 }
 
@@ -339,6 +346,7 @@ footer h1 {
   text-decoration: none;
 }
 
+
 /*Work-page*/
 
 #work-page #work {
@@ -347,7 +355,7 @@ footer h1 {
 
 /*Knitcase*/
 .title {
-  padding-top: 240px;
+  padding-top: 200px;
   padding-bottom: 40px;
   text-align: center;
 }
@@ -363,6 +371,10 @@ footer h1 {
 
 #knitcase .container {
   padding: 0 25px;
+}
+
+#knitcase header .container {
+  padding: 0 15px;
 }
 
 .testing img {
@@ -385,18 +397,26 @@ footer h1 {
   padding: 10px 0;
 }
 
-.scrollToTopBtn {
+#knitcase main {
+  margin-bottom: 30px;
+}
+
+
+.scrollToTopBtn,
+.scrollToTopBtn:visited {
+  color: #4c333f;
+  transition: 0.5s color;
 	border: none;
-	background-color: #ffffff;
-	color: #433237;
+  background: none;
 	cursor: pointer;
 	font-size: 16px;
-	line-height: 30px;
-	width: 10%;
+	line-height: 20px;
+	width: 50%;
 	/* place it at the bottom right corner */
 	position: fixed;
+  margin-left: auto;
+  margin-right: auto;
 	bottom: 30px;
-	right: 25px;
 	/* keep it at the top of everything else */
 	z-index: 100;
 	/* hide with opacity */
@@ -405,6 +425,14 @@ footer h1 {
 	transform: translateY(100px);
 	/* and a transition */
 	transition: all 0.5s ease;
+}
+
+
+.scrollToTopBtn:hover,
+.scrollToTopBtn:focus,
+.scrollToTopBtn:active {
+  color: #9d8d95;
+  border: none;
 }
 
 .showBtn {
@@ -469,6 +497,10 @@ Small-Medium devices (400px and larger)
     font-size: 1.125em;
   }
 
+footer {
+  padding-bottom: 50px;
+}
+
   #hero {
     padding-top: 10em;
     height: 90vh;
@@ -481,6 +513,10 @@ Small-Medium devices (400px and larger)
   #work {
     padding: 2em 0;
   }
+
+  [class*="col-"] {
+  padding-right: 40px;
+}
 
   .col-md-6 {
     width: 50%;
@@ -510,12 +546,13 @@ Small-Medium devices (400px and larger)
     display: inline-block;
   }
 
-  #about-page h3 {
-    margin-top: 0;
-  }
-
   #about-page main {
     padding-top: 160px;
+  }
+
+  #about-page h2 {
+    margin-top: 0;
+    margin-bottom: -10px;
   }
 
   #about-page img {
@@ -523,13 +560,31 @@ Small-Medium devices (400px and larger)
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 30px;
   }
 
   .title {
     padding-top: 160px;
     padding-bottom: 40px;
   }
+
+  #work-page main {
+    padding-top: 130px;
+  }
 }
+
+
+.scrollToTopBtn,
+.scrollToTopBtn:visited {
+	font-size: 16px;
+	line-height: 30px;
+	width: 30%;
+	/* place it at the bottom right corner */
+	position: fixed;
+	bottom: 30px;
+	right: 25px;
+}
+
 
 /* ==============================
   Large devices (1024px or larger)
