@@ -13,8 +13,8 @@ White-pink: #fffcfd;
   box-sizing: border-box;
 }
 
-html{
-	scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -115,7 +115,6 @@ a:active {
   /*  opacity: 0.8; */
 }
 
-
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -135,39 +134,6 @@ a:active {
   border-bottom: 1px solid #ded9da;
 }
 
-#work > img {
-  position: relative;
-}
-
-#work img {
-  transition: 0.5s opacity;
-  display: block;
-}
-
-#work img:hover {
-  background-color: #000;
-  opacity: 20%;
-}
-
-#work > .overlay-button {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  text-align: center;
-}
-
-#work img:hover a.overlay-button {
-  opacity: 100%;
-  visibility: visible;
-  top: 50%;
-  left: 50%;
-  text-transform: uppercase;
-  font-family: 'Amiko', sans-serif;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-
 .rowknitcase {
   padding-top: 0;
   margin-top: 0;
@@ -185,12 +151,12 @@ main {
 [class*="col-"] {
   float: left;
   padding: 10px;
-
 }
 
 /* Header and navbar styling */
 header {
   background-color: #f0e4e4;
+  z-index: 200;
   padding: 10px 0;
   width: 100%;
   position: fixed;
@@ -221,31 +187,29 @@ nav>ul>li>a {
   position: relative;
 }
 
-
 .navtoggle li .icon, .navtoggle li .icon:visited {
   color: #4c333f;
   position: absolute;
-padding-top: 40px;
-    padding-right: 0;
+  padding-top: 40px;
+  padding-right: 0;
   right: 0;
   top: 2px;
   font-size: 24px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-text-align: center;
+  text-align: center;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
 
 nav a:visited {
   color: #4c333f;
@@ -273,7 +237,7 @@ nav a:active {
 
 /* Hero styling */
 #hero {
-  background-color: #faf2f2;
+  background-color: #fcf5f5;
   display: inline-block;
   width: 100%;
   height: 60%;
@@ -296,7 +260,6 @@ nav a:active {
 #about-page img {
   padding: 0 10px;
 }
-
 
 #about-page h2 {
   margin: 10px 0;
@@ -328,7 +291,7 @@ footer h1 {
 }
 
 #social-media a {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 #social-media a,
@@ -336,7 +299,6 @@ footer h1 {
   color: #4c333f;
   padding: 5px;
   transition: 0.5s color;
-
 }
 
 #social-media a:hover,
@@ -346,9 +308,7 @@ footer h1 {
   text-decoration: none;
 }
 
-
 /*Work-page*/
-
 #work-page #work {
   padding-top: 0;
 }
@@ -401,32 +361,35 @@ footer h1 {
   margin-bottom: 30px;
 }
 
+.scroll-button {
+  display: flex;
+  justify-content: center;
+}
 
 .scrollToTopBtn,
 .scrollToTopBtn:visited {
   color: #4c333f;
   transition: 0.5s color;
-	border: none;
+  border: none;
   background: none;
-	cursor: pointer;
-	font-size: 16px;
-	line-height: 20px;
-	width: 50%;
-	/* place it at the bottom right corner */
-	position: fixed;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  width: 50%;
+  /* place it at the bottom right corner */
   margin-left: auto;
   margin-right: auto;
-	bottom: 30px;
-	/* keep it at the top of everything else */
-	z-index: 100;
-	/* hide with opacity */
-	opacity: 0;
-	/* also add a translate effect */
-	transform: translateY(100px);
-	/* and a transition */
-	transition: all 0.5s ease;
+  margin-top: 30px;
+  bottom: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all 0.5s ease;
 }
-
 
 .scrollToTopBtn:hover,
 .scrollToTopBtn:focus,
@@ -436,12 +399,12 @@ footer h1 {
 }
 
 .showBtn {
-	opacity: 1;
-	transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .scrollToTopBtn span {
-	display: block;
+  display: block;
 }
 
 /* Media queries
@@ -449,9 +412,10 @@ footer h1 {
 Small-Medium devices (400px and larger)
 ================================= */
 @media only screen and (min-width: 400px) {
-#hero {
-  height: 80vh;
-  padding-top: 120px;
+  #hero {
+    height: 80vh;
+    padding-top: 120px;
+  }
 }
 
 /*
@@ -469,21 +433,19 @@ Small-Medium devices (400px and larger)
     margin-top: 1.3em;
   }
 
-  nav > ul {
-  margin: 1em 0;
-}
+  nav>ul {
+    margin: 1em 0;
+  }
 
+  /*ensures menu links aren't hidden*/
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-/*ensures menu links aren't hidden*/
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-
-/*ensures hamburger menu is hidden*/
-.navtoggle li:last-child {
-  display: none;
-}
-
+  /*ensures hamburger menu is hidden*/
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   .logo {
     padding-top: 0;
@@ -497,9 +459,9 @@ Small-Medium devices (400px and larger)
     font-size: 1.125em;
   }
 
-footer {
-  padding-bottom: 50px;
-}
+  footer {
+    padding-bottom: 50px;
+  }
 
   #hero {
     padding-top: 10em;
@@ -514,9 +476,49 @@ footer {
     padding: 2em 0;
   }
 
+  #work>img {
+    position: relative;
+  }
+
+  #work img {
+    transition: 0.5s filter;
+    display: block;
+  }
+
+  #work img:hover {
+    background-color: #000;
+    filter: brightness(0.4);
+  }
+
+  .thumbnail-container {
+    position: relative;
+  }
+
+  .overlay-button {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 300px;
+    left: 330px;
+    width: 100%;
+  }
+
+  .rowvtime .overlay-button {
+    top: 220px;
+  }
+
+  a:hover .overlay-button {
+    opacity: 100%;
+    visibility: visible;
+    text-transform: uppercase;
+    font-family: 'Amiko', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+  }
+
   [class*="col-"] {
-  padding-right: 40px;
-}
+    padding-right: 40px;
+  }
 
   .col-md-6 {
     width: 50%;
@@ -571,20 +573,18 @@ footer {
   #work-page main {
     padding-top: 130px;
   }
+
+  .scrollToTopBtn,
+  .scrollToTopBtn:visited {
+    font-size: 16px;
+    line-height: 30px;
+    width: 30%;
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 60px;
+    right: 25px;
+  }
 }
-
-
-.scrollToTopBtn,
-.scrollToTopBtn:visited {
-	font-size: 16px;
-	line-height: 30px;
-	width: 30%;
-	/* place it at the bottom right corner */
-	position: fixed;
-	bottom: 60px;
-	right: 25px;
-}
-
 
 /* ==============================
   Large devices (1024px or larger)
@@ -608,7 +608,6 @@ footer {
     padding: 5em 10px;
     font-size: 1.5em;
     line-height: 1.5em;
-
   }
 
   #hero p {
@@ -679,5 +678,3 @@ footer {
     padding-top: 6em;
   }
 }
-
-<script src="js/scripts.js"></script>
