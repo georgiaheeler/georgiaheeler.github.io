@@ -34,9 +34,10 @@
       </a>
       <nav>
         <ul>
-          <li><a href="work.html">Work</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html #work" onclick="menuToggle()">My Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact" onclick="menuToggle()" >Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
@@ -66,8 +67,10 @@
               teamwork,
               feedback and iteration forms the backbone of the impactful delivery of user-centred products and services.
             </p>
-            <a href="files/Georgia Heeler_CV.pdf" target="_blank">View my CV here
+            <div  id="cv">
+              <a href="files/Georgia Heeler_CV.pdf" target="_blank">View my CV here
             </a>
+          </div>
           </div>
           <!-- end column -->
           <!-- start column Skills & Tools-->
@@ -108,7 +111,7 @@
   <footer>
     <div id="contact">
       <div class="container">
-        <h1>Get in touch
+        <h1>Contact
         </h1>
         <p>
           If you'd like to reach out about work opportunities, please email me at <a href="mailto:georgiaheeler@gmail.com">georgiaheeler@gmail.com</a>.
@@ -130,8 +133,11 @@
         <p>Copyright GEORGIA HEELER 2021</p>
       </div>
     </div>
+    <div class="scroll-button">
+      <button class="scrollToTopBtn"><i class="fas fa-chevron-up"></i><span>Scroll to top</span> </button>
+    </div>
   </footer>
-  <button class="scrollToTopBtn"><i class="fas fa-chevron-up"></i><span>Scroll to top</span> </button>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
