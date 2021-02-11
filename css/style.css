@@ -806,12 +806,12 @@ Small-Medium devices (400px and larger)
   }
 
   #hero {
-    padding-top: 6em;
+    padding-top: 9em;
   }
 
   /* Contact-page */
   #contact-page main {
-    padding-top: 14em;
+    padding-top: 18em;
     padding-bottom: 40px;
   }
 }
