@@ -2,13 +2,11 @@
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
   if (x.className === 'navtoggle') {
-  x.className += ' responsive';
-} else {
-  x.className = 'navtoggle';
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
 }
-}
-
-
 
 // Scroll to top button
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
@@ -18,7 +16,7 @@ function handleScroll() {
   // Do something on scroll - 0.15 is the percentage the page has to scroll before the button appears
   // This can be changed - experiment
   var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-  if ((rootElement.scrollTop / scrollTotal ) > 0.9) {
+  if ((rootElement.scrollTop / scrollTotal) > 0.9) {
     // Show button
     scrollToTopBtn.classList.add("showBtn")
   } else {
