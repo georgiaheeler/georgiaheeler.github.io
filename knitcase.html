@@ -35,7 +35,7 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html #work" onclick="menuToggle()">My Work</a></li>
+            <li><a href="index.html#work" onclick="menuToggle()">My Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -70,6 +70,7 @@
             <li> <a href="#testing2">Testing & Feedback rnd. 2</a></li>
             <li> <a href="#final-screens">Final screens</a></li>
             <li> <a href="#reflection">Reflection</a></li>
+          </ol>
         </div>
         <div class="col-lg-7">
           <picture>
@@ -105,255 +106,260 @@
           <source srcset="img/knitcase/pngs/background.png" media="(max-width:767px)">
           <img src="img/knitcase/pngs/background.png" alt="Infographic of knitting stats">
         </picture>
-        <figcaption>Infographic by <a href="https://www.woolandthegang.com/en" target="_blank">Wool & the Gang</a></figcaption>
+        <figcaption>Infographic by <a href="https://www.woolandthegang.com/en" target="_blank">Wool & the Gang</a>
+        </figcaption>
       </div>
-      <p>Owing to the increasing popularity of knitting and its growing digital presence, I wanted to design an app where knitters could do all of the above, all in one place.
-      </p>
+          <p>Owing to the increasing popularity of knitting and its growing digital presence, I wanted to design an app where knitters could do all of the above, all in one place.
+          </p>
 
-      <div id="approach">
-        <h2>Approach
-        </h2>
-        <picture>
-          <source srcset="img/knitcase/pngs/process.png" media="(max-width:767px)">
-          <img src="img/knitcase/pngs/process@2x.png" alt="Image of design process">
-        </picture>
-      </div>
-      <div id="competitor">
-        <h2>Competitor Analysis
-        </h2>
-        <p>There were few good quality knitting apps on the market. I found three that corresponded with my objective: The Knitting App, Knitting Genius and LoveKnitting
-        </p>
-        <a href="files/knitcase/knitcase_swot_analysis.pdf" target="_blank">View SWOT analysis here
-        </a><br>
-        <div class="swot-summary">
-          <h4> Bottom line
-          </h4>
-          <p>Overall, it appears that current apps lack appeal in terms of their overall UX and UI and either offer limited features (LoveKnitting and Knitting Genius) or offer too many (The Knitting App). Additionally, these apps either neglect any
-            social aspect (LoveKnitting and Knitting Genius) or combine social with personal and educational aspects unsuccessfully (The Knitting App).
-          </p>
-        </div>
-        <div class="swot-summary">
-          <h4>How Knitcase compares
-          </h4>
-          <p>Knitcase will be useful because it will combine only the necessary features of the personal, educational and social aspects of knitting. It will also allow users to contribute to the pattern library, providing a source for new patterns
-            and greater variety. Knitcase will stand out with its entirely different aesthetic. The current apps’ interfaces either feel cluttered, immature or dated. The visual direction for Knitcase will be modern and sophisticated.
-          </p>
-        </div>
-        <picture>
-          <source srcset="img/knitcase/pngs/features.png" media="(max-width:767px)">
-          <img src="img/knitcase/pngs/features@2x.png" alt="Description of key features">
-        </picture>
-      </div>
-      <div id="user-stories">
-        <h2>User Stories and Flows
-        </h2>
-        <p>Having narrowed down the aims of Knitcase and developed a better idea of the primary tasks users would need to complete, I was able to define user stories and their corresponding flows:
-        </p>
-        <picture>
-          <img src="img/knitcase/pngs/flow1.png" alt="Diagram of flow 1: find and save patterns to personal library">
-          <img src="img/knitcase/pngs/flow2.png" alt="Diagram of flow 2: learn new stitches">
-          <img src="img/knitcase/pngs/flow3.png" alt="Diagram of flow 3: showcase personal projects">
-        </picture>
-        <h3>User flow diagram
-        </h3>
-        <picture>
-          <source srcset="img/knitcase/pngs/flowd.png" media="(max-width:767px)">
-          <img src="img/knitcase/pngs/flowd@2x.png" alt="Image of full user flow diagram">
-        </picture>
-      </div>
-      <div id="wireframing">
-        <h2>Wireframing
-        </h2>
-        <div>
-          <p>
-            Once I'd defined the flows, I started sketching out ideas for how the screens would look:
-          </p>
-          <picture>
-            <source srcset="img/knitcase/jpgs/low-fi wireframes.jpg" media="(max-width:767px)">
-            <img src="img/knitcase/jpgs/low-fi wireframes.jpg" alt="Image of low-fidelity sketches">
-            <source srcset="img/knitcase/jpgs/low-fi sketches.jpg" media="(max-width:767px)">
-            <img src="img/knitcase/jpgs/low-fi sketches.jpg" alt="Image of low-fidelity sketches">
-          </picture>
-        </div>
-        <div id="mid-fi">
-          <h3>Mid-fidelity wireframes
-          </h3>
-          <p>From there, I narrowed down the best options and used Marvel prototyping tool to test the flows and navigation. This was really helpful as I could quickly see what screens or element were missing, before bringing them to life in Adobe
-            XD.
-          </p>
-          <picture>
-            <source srcset="img/knitcase/pngs/mid-fi wireframes.png" media="(max-width:767px)">
-            <img src="img/knitcase/pngs/mid-fi wireframes.png" alt="Mid-fidelity wireframes">
-          </picture>
-        </div>
-      </div>
-      <div id="testing1">
-        <h2>Testing & Feedback
-        </h2>
-        <h4> Round 1
-        </h4>
-        <p>
-          Before progressing to high-fidelity screens, I made sure to receive feedback from peers and conducted two usability test sessions. Overall, the feedback highlighted that, although tasks seemed easy to complete, there was a lack of
-          memorability and confidence and in having completed them correctly.It appeared I had added too many routes to complete the 'add new project' task.
-        </p>
-        <p>
-          In their place, I created a new route, which encompassed the former task and 'add new pattern' task, under one button on the bottom nav bar. This made the interface cleaner and removed the confusing and unnecessary ‘+’ button on Profile;
-          it also made the tasks a lot quicker and easier to complete.
-        </p>
-        <h4>Changes
-        </h4>
-        <picture>
-          <img src="img/knitcase/jpgs/testing/1.jpg" alt="Image of testing changes" id="odd-image-testing">
-          <img src="img/knitcase/jpgs/testing/2.jpg" alt="Image of testing changes">
-          <img src="img/knitcase/jpgs/testing/3.jpg" alt="Image of testing changes">
-        </picture>
-      </div>
-      <div id="visual-design">
-        <h2>Visual Design
-        </h2>
-        <h3>Logo development
-        </h3>
-        <picture>
-          <source srcset="img/knitcase/jpgs/logo.jpg" media="(max-width:767px)">
-          <img src="img/knitcase/jpgs/logo.jpg" alt="Logo ideation">
-        </picture>
-        <picture>
-          <source srcset="img/knitcase/pngs/final-logo.png" media="(max-width:767px)">
-          <img class="final-logo" src="img/knitcase/pngs/final-logo@2x.png" alt="Final Knitcase logo design">
-        </picture>
-
-        <h3>Style guide
-        </h3>
-        <picture>
-          <source srcset="img/knitcase/jpgs/style guide.jpg" media="(max-width:767px)">
-          <img src="img/knitcase/jpgs/style guide.jpg" alt="Style guide">
-        </picture>
-      </div>
-      <div id="testing2">
-        <h2>Testing & Feedback
-        </h2>
-        <h4>Round 2
-        </h4>
-        <p>Now that I'd iterated upon my mid-fidelity wireframes and applied Knitcase's style guide to all screens, I could conduct another round of usability testing and feedback, using a more realistic, high-fidelity prototype.
-          I conducted task-based moderated usability testing sessions with two participants, and received task-based unmoderated testing feedback from three other participants (five total).
-        </p>
-        <picture>
-          <source srcset="img/knitcase/pngs/testing.png" media="(max-width:767px)">
-          <img src="img/knitcase/pngs/testing@2x.png" alt="Testing tasks">
-        </picture>
-        <h3>Results synthesis
-        </h3>
-        <p>
-          There was no consensus around design or flow errors. Each participant brought up different problems or made different suggestions. I catered for each appropriately, depending on the time and effort required to make the changes, whether
-          the suggestion was necessary or added value in terms of ease and efficiency vs being a want, and whether the suggestion compromised other actions or visuals, e.g. added clutter.
-        </p>
-        <picture>
-          <source srcset="img/knitcase/pngs/quotes.png" media="(max-width:767px)">
-          <img src="img/knitcase/pngs/quotes@2x.png" alt="Positive quotes by users during testing">
-        </picture>
-        <h4>Changes
-        </h4>
-        <picture>
-          <img src="img/knitcase/jpgs/testing/1a.jpg" alt="Changes made from testing">
-          <img src="img/knitcase/jpgs/testing/2a.jpg" alt="Changes made from testing">
-          <img src="img/knitcase/jpgs/testing/3a.jpg" alt="Changes made from testing">
-          <img src="img/knitcase/jpgs/testing/4a.jpg" alt="Changes made from testing">
-        </picture>
-      </div>
-      <div id="final-screens">
-        <h2>Final screens
-        </h2>
-        <picture>
-          <source srcset="img/knitcase/jpgs/final screens.jpg" media="(max-width:767px)">
-          <img src="img/knitcase/jpgs/final screens.jpg" alt="Final screens">
-        </picture>
-      </div>
-      <div id="gif-flows">
-        <!-- Start row-->
-        <div class="row">
-          <!-- Start column-->
-          <div class="col-4">
-            <figcaption>Searching for & viewing patterns
-            </figcaption>
+          <div id="approach">
+            <h2>Approach
+            </h2>
             <picture>
-              <source srcset="img/knitcase/gifs/1.gif" media="(max-width:767px)">
-              <img src="img/knitcase/gifs/1.gif" alt="Gif of user flow">
-
+              <source srcset="img/knitcase/pngs/process.png" media="(max-width:767px)">
+              <img src="img/knitcase/pngs/process@2x.png" alt="Image of design process">
             </picture>
-            <!--end column-->
           </div>
-          <!-- Start column-->
-          <div class="col-4">
-            <figcaption>
-              Searching for & viewing tutorials
-            </figcaption>
+          <div id="competitor">
+            <h2>Competitor Analysis
+            </h2>
+            <p>There were few good quality knitting apps on the market. I found three that corresponded with my objective: The Knitting App, Knitting Genius and LoveKnitting
+            </p>
+            <a href="files/knitcase/knitcase_swot_analysis.pdf" target="_blank">View SWOT analysis here
+            </a><br>
+            <div class="swot-summary">
+              <h4> Bottom line
+              </h4>
+              <p>Overall, it appears that current apps lack appeal in terms of their overall UX and UI and either offer limited features (LoveKnitting and Knitting Genius) or offer too many (The Knitting App). Additionally, these apps either neglect
+                any
+                social aspect (LoveKnitting and Knitting Genius) or combine social with personal and educational aspects unsuccessfully (The Knitting App).
+              </p>
+            </div>
+            <div class="swot-summary">
+              <h4>How Knitcase compares
+              </h4>
+              <p>Knitcase will be useful because it will combine only the necessary features of the personal, educational and social aspects of knitting. It will also allow users to contribute to the pattern library, providing a source for new
+                patterns
+                and greater variety. Knitcase will stand out with its entirely different aesthetic. The current apps’ interfaces either feel cluttered, immature or dated. The visual direction for Knitcase will be modern and sophisticated.
+              </p>
+            </div>
             <picture>
-              <source srcset="img/knitcase/gifs/3.gif" media="(max-width:767px)">
-              <img src="img/knitcase/gifs/3.gif" alt="Gif of user flow">
+              <source srcset="img/knitcase/pngs/features.png" media="(max-width:767px)">
+              <img src="img/knitcase/pngs/features@2x.png" alt="Description of key features">
+            </picture>
+          </div>
+          <div id="user-stories">
+            <h2>User Stories and Flows
+            </h2>
+            <p>Having narrowed down the aims of Knitcase and developed a better idea of the primary tasks users would need to complete, I was able to define user stories and their corresponding flows:
+            </p><br>
+              <img src="img/knitcase/pngs/flow1.png" alt="Diagram of flow 1: find and save patterns to personal library"><br>
+              <img src="img/knitcase/pngs/flow2.png" alt="Diagram of flow 2: learn new stitches"><br>
+              <img src="img/knitcase/pngs/flow3.png" alt="Diagram of flow 3: showcase personal projects"><br>
 
-            </picture>
-            <!--end column-->
-          </div>
-          <!-- Start column-->
-          <div class="col-4">
-            <figcaption>
-              Creating & publishing a project
-            </figcaption>
+            <h3>User flow diagram
+            </h3>
             <picture>
-              <source srcset="img/knitcase/gifs/2.gif" media="(max-width:767px)">
-              <img src="img/knitcase/gifs/2.gif" alt="Gif of user flow">
+              <source srcset="img/knitcase/pngs/flowd.png" media="(max-width:767px)">
+              <img src="img/knitcase/pngs/flowd@2x.png" alt="Image of full user flow diagram">
             </picture>
-            <!--end column-->
           </div>
-          <!--end row-->
+          <div id="wireframing">
+            <h2>Wireframing
+            </h2>
+            <div>
+              <p>
+                Once I'd defined the flows, I started sketching out ideas for how the screens would look:
+              </p>
+              <picture>
+                <source srcset="img/knitcase/jpgs/low-fi-wireframes.jpg" media="(max-width:767px)">
+                <img src="img/knitcase/jpgs/low-fi-wireframes.jpg" alt="Image of low-fidelity sketches">
+                <source srcset="img/knitcase/jpgs/low-fi-sketches.jpg" media="(max-width:767px)">
+                <img src="img/knitcase/jpgs/low-fi-sketches.jpg" alt="Image of low-fidelity sketches">
+              </picture>
+            </div>
+            <div id="mid-fi">
+              <h3>Mid-fidelity wireframes
+              </h3>
+              <p>From there, I narrowed down the best options and used Marvel prototyping tool to test the flows and navigation. This was really helpful as I could quickly see what screens or element were missing, before bringing them to life in
+                Adobe
+                XD.
+              </p>
+              <picture>
+                <source srcset="img/knitcase/pngs/mid-fi-wireframes.png" media="(max-width:767px)">
+                <img src="img/knitcase/pngs/mid-fi-wireframes.png" alt="Mid-fidelity wireframes">
+              </picture>
+            </div>
+          </div>
+          <div id="testing1">
+            <h2>Testing & Feedback
+            </h2>
+            <h4> Round 1
+            </h4>
+            <p>
+              Before progressing to high-fidelity screens, I made sure to receive feedback from peers and conducted two usability test sessions. Overall, the feedback highlighted that, although tasks seemed easy to complete, there was a lack of
+              memorability and confidence and in having completed them correctly.It appeared I had added too many routes to complete the 'add new project' task.
+            </p>
+            <p>
+              In their place, I created a new route, which encompassed the former task and 'add new pattern' task, under one button on the bottom nav bar. This made the interface cleaner and removed the confusing and unnecessary ‘+’ button on
+              Profile;
+              it also made the tasks a lot quicker and easier to complete.
+            </p>
+            <h4>Changes
+            </h4>
+            <picture>
+              <img src="img/knitcase/jpgs/testing/1.jpg" alt="Image of testing changes" id="odd-image-testing">
+              <img src="img/knitcase/jpgs/testing/2.jpg" alt="Image of testing changes">
+              <img src="img/knitcase/jpgs/testing/3.jpg" alt="Image of testing changes">
+            </picture>
+          </div>
+          <div id="visual-design">
+            <h2>Visual Design
+            </h2>
+            <h3>Logo development
+            </h3>
+            <picture>
+              <source srcset="img/knitcase/jpgs/logo.jpg" media="(max-width:767px)">
+              <img src="img/knitcase/jpgs/logo.jpg" alt="Logo ideation">
+            </picture>
+            <picture>
+              <source srcset="img/knitcase/pngs/final-logo.png" media="(max-width:767px)">
+              <img class="final-logo" src="img/knitcase/pngs/final-logo@2x.png" alt="Final Knitcase logo design">
+            </picture>
+
+            <h3>Style guide
+            </h3>
+            <picture>
+              <source srcset="img/knitcase/jpgs/style-guide.jpg" media="(max-width:767px)">
+              <img src="img/knitcase/jpgs/style-guide.jpg" alt="Style guide">
+            </picture>
+          </div>
+          <div id="testing2">
+            <h2>Testing & Feedback
+            </h2>
+            <h4>Round 2
+            </h4>
+            <p>Now that I'd iterated upon my mid-fidelity wireframes and applied Knitcase's style guide to all screens, I could conduct another round of usability testing and feedback, using a more realistic, high-fidelity prototype.
+              I conducted task-based moderated usability testing sessions with two participants, and received task-based unmoderated testing feedback from three other participants (five total).
+            </p>
+            <picture>
+              <source srcset="img/knitcase/pngs/testing.png" media="(max-width:767px)">
+              <img src="img/knitcase/pngs/testing@2x.png" alt="Testing tasks">
+            </picture>
+            <h3>Results synthesis
+            </h3>
+            <p>
+              There was no consensus around design or flow errors. Each participant brought up different problems or made different suggestions. I catered for each appropriately, depending on the time and effort required to make the changes, whether
+              the suggestion was necessary or added value in terms of ease and efficiency vs being a want, and whether the suggestion compromised other actions or visuals, e.g. added clutter.
+            </p>
+            <picture>
+              <source srcset="img/knitcase/pngs/quotes.png" media="(max-width:767px)">
+              <img src="img/knitcase/pngs/quotes@2x.png" alt="Positive quotes by users during testing">
+            </picture>
+            <h4>Changes
+            </h4>
+            <picture>
+              <img src="img/knitcase/jpgs/testing/1a.jpg" alt="Changes made from testing">
+              <img src="img/knitcase/jpgs/testing/2a.jpg" alt="Changes made from testing">
+              <img src="img/knitcase/jpgs/testing/3a.jpg" alt="Changes made from testing">
+              <img src="img/knitcase/jpgs/testing/4a.jpg" alt="Changes made from testing">
+            </picture>
+          </div>
+          <div id="final-screens">
+            <h2>Final screens
+            </h2>
+            <picture>
+              <source srcset="img/knitcase/jpgs/final-screens.jpg" media="(max-width:767px)">
+              <img src="img/knitcase/jpgs/final-screens.jpg" alt="Final screens">
+            </picture>
+          </div>
+          <div id="gif-flows">
+            <!-- Start row-->
+            <div class="row">
+              <!-- Start column-->
+              <div class="col-4">
+                <figcaption>Searching for & viewing patterns
+                </figcaption>
+                <picture>
+                  <source srcset="img/knitcase/gifs/1.gif" media="(max-width:767px)">
+                  <img src="img/knitcase/gifs/1.gif" alt="Gif of user flow">
+
+                </picture>
+                <!--end column-->
+              </div>
+              <!-- Start column-->
+              <div class="col-4">
+                <figcaption>
+                  Searching for & viewing tutorials
+                </figcaption>
+                <picture>
+                  <source srcset="img/knitcase/gifs/3.gif" media="(max-width:767px)">
+                  <img src="img/knitcase/gifs/3.gif" alt="Gif of user flow">
+                </picture>
+                <!--end column-->
+              </div>
+              <!-- Start column-->
+              <div class="col-4">
+                <figcaption>
+                  Creating & publishing a project
+                </figcaption>
+                <picture>
+                  <source srcset="img/knitcase/gifs/2.gif" media="(max-width:767px)">
+                  <img src="img/knitcase/gifs/2.gif" alt="Gif of user flow">
+                </picture>
+                <!--end column-->
+              </div>
+              <!--end row-->
+            </div>
+          </div>
+
+          <div id="android">
+            <p>I also designed a native app version for Android:
+              <a href="https://xd.adobe.com/view/ce4b10b1-35fb-4267-ad35-3b033e01e61b-9b18/" id="android-link" target="_blank">Click to view Android prototype</a>
+            </p>
+            <picture>
+              <source srcset="img/knitcase/pngs/android.png" media="(max-width:767px)">
+              <img src="img/knitcase/pngs/android@2x.png" alt="Preview of Android screens">
+            </picture>
+
+          </div>
+          <div id="reflection">
+            <h2>
+              Reflection
+            </h2>
+            <h3> What went well
+            </h3>
+            <h4> Testing early & often
+            </h4>
+            <p>I made sure to conduct two rounds of testing to verify my design decisions. The earlier rounds of testing and feedback with my mid-fidelity prototypes proved beneficial, as the '+' bottom nav bar button that came out of this received
+              an
+              all-round positive response during the final round of testing and feedback. All participants used this route to complete the 'create new project' task.
+            </p>
+            <h4> Colour & spacing
+            </h4>
+            <p>
+              I carried forward learnings from my previous projects and, this time, felt I was successful at using colour (using less of it and having variations of one main hue) and spacing (ensuring increments of 8px and letting elements breathe)
+              more effectively.
+            </p>
+            <h3> Challenges and what I’d do differently
+            </h3>
+            <h4> Test more Representative users
+            </h4>
+            <p>
+              Although testing was extremely beneficial, only one of my participants represented my target user audience, i.e. they knitted. Because of this, there might have been a lack of confidence in navigating the app and completing tasks, which
+              may have negatively affected usability test findings. For instance, a couple of participants voiced confusion about what 'patterns' were.
+              Even though participants successfully completed tasks, this observation demonstrates the importance of testing the correct user group so a lack of confidence in this area doesn’t potentially impact results. Next time, I should account
+              for
+              this by allowing myself extra time to recruit more representative users.
+            </p>
+            <h3> Further development
+            </h3>
+            <p>
+              Further development of Knitcase could surround designing the app from a business perspective. For instance, what it's Key Performace Indicators would be, how they'd inform business objectives, and how designs would be adapted to improve
+              metrics. For example, Knitcase could be offered on a 'freemium' basis offering a selection of free patterns, with users having to upgrade to a premium plan to access all patterns. KPIs would include number of patterns saved and viewed,
+              number of projects created and published, and number of accounts upgraded to premium.
+          </div>
         </div>
-      </div>
-
-      <div id="android">
-        <p>I also designed a native app version for Android:
-          <a href="https://xd.adobe.com/view/ce4b10b1-35fb-4267-ad35-3b033e01e61b-9b18/" id="android-link" target="_blank">Click to view Android prototype</a>
-        </p>
-        <picture>
-          <source srcset="img/knitcase/pngs/android.png" media="(max-width:767px)">
-          <img src="img/knitcase/pngs/android@2x.png" alt="Preview of Android screens">
-        </picture>
-
-      </div>
-      <div id="reflection">
-        <h2>
-          Reflection
-        </h2>
-        <h3> What went well
-        </h3>
-        <h4> Testing early & often
-        </h4>
-        <p>I made sure to conduct two rounds of testing to verify my design decisions. The earlier rounds of testing and feedback with my mid-fidelity prototypes proved beneficial, as the '+' bottom nav bar button that came out of this received an
-          all-round positive response during the final round of testing and feedback. All participants used this route to complete the 'create new project' task.
-        </p>
-        <h4> Colour & spacing
-        </h4>
-        <p>
-          I carried forward learnings from my previous projects and, this time, felt I was successful at using colour (using less of it and having variations of one main hue) and spacing (ensuring increments of 8px and letting elements breathe)
-          more effectively.
-        </p>
-        <h3> Challenges and what I’d do differently
-        </h3>
-        <h4> Test more Representative users
-        </h4>
-        <p>
-          Although testing was extremely beneficial, only one of my participants represented my target user audience, i.e. they knitted. Because of this, there might have been a lack of confidence in navigating the app and completing tasks, which
-          may have negatively affected usability test findings. For instance, a couple of participants voiced confusion about what 'patterns' were.
-          Even though participants successfully completed tasks, this observation demonstrates the importance of testing the correct user group so a lack of confidence in this area doesn’t potentially impact results. Next time, I should account for
-          this by allowing myself extra time to recruit more representative users.
-        </p>
-        <h3> Further development
-        </h3>
-        <p>
-          Further development of Knitcase could surround designing the app from a business perspective. For instance, what it's Key Performace Indicators would be, how they'd inform business objectives, and how designs would be adapted to improve
-          metrics. For example, Knitcase could be offered on a 'freemium' basis offering a selection of free patterns, with users having to upgrade to a premium plan to access all patterns. KPIs would include number of patterns saved and viewed,
-          number of projects created and published, and number of accounts upgraded to premium.
-      </div>
-    </div>
   </main>
   <footer>
     <div id="contact">
