@@ -356,7 +356,7 @@ footer h1 {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 30px 10px;
+  padding: 10px;
 }
 
 /* Work-page */
@@ -426,6 +426,7 @@ footer h1 {
 
 .col-4 {
   padding: 0 20px;
+  margin: 0;
 }
 
 #android-link {
@@ -438,7 +439,7 @@ footer h1 {
 }
 
 #knitcase main {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 /* Quest page */
@@ -637,6 +638,10 @@ Small-Medium devices (400px and larger)
   #contact-page main {
     padding-top: 210px;
     padding-bottom: 40px;
+  }
+
+  #contact-page footer {
+    padding: 30px 10px;
   }
 
   /* Knitcase-page */
