@@ -36,7 +36,7 @@ h1 {
 h2 {
   font-family: 'Amiko', sans-serif;
   text-transform: uppercase;
-  color: #BB8888;
+  color: #b88;
   font-size: 2em;
   font-weight: 600;
   line-height: 1.5em;
@@ -80,6 +80,7 @@ img {
 a {
   color: #c2025b;
   text-decoration: none;
+
   /* No underlining */
 }
 
@@ -92,7 +93,6 @@ a:hover,
 a:focus {
   color: #c2025b;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
@@ -105,13 +105,15 @@ a:active {
   display: inline-block;
   text-transform: uppercase;
   font-family: 'Amiko', sans-serif;
-  color: #ffffff;
+  color: #fff;
+
   /* needed to override the default link color */
   background-color: #c2025b;
   font-weight: 400;
   padding: 14px 18px;
   border-radius: 3px;
   border-bottom: 2px solid #6e0033;
+
   /* width of the border, type, color */
   transition: 0.5s background-color;
 }
@@ -121,7 +123,8 @@ a:active {
 .button:active {
   background-color: #6e0033;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
+
   /*  opacity: 0.8; */
 }
 
@@ -149,7 +152,7 @@ a:active {
   padding-top: 15px;
 }
 
-/*.rowknitcase {
+/* .rowknitcase {
   padding-top: 0;
   margin-top: 0;
 }
@@ -174,7 +177,7 @@ main {
 }
 
 .rowvtime .col-lg-5 {
-margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 [class*="col-"] {
@@ -193,13 +196,13 @@ header {
   box-shadow: 0px 4px 5px 0px rgba(80, 68, 92, 0.36);
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -212,11 +215,13 @@ nav>ul>li>a {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
-.navtoggle li .icon, .navtoggle li .icon:visited {
+.navtoggle li .icon,
+.navtoggle li .icon:visited {
   color: #4c333f;
   position: absolute;
   padding-top: 14px;
@@ -318,7 +323,7 @@ footer h1 {
   display: block;
 }
 
-/*About*/
+/* About */
 #about-page main {
   padding-top: 130px;
   padding-bottom: 40px;
@@ -341,7 +346,6 @@ footer h1 {
   margin: 40px 0;
 }
 
-
 /* Contact-page */
 #contact-page main {
   padding-top: 170px;
@@ -355,14 +359,12 @@ footer h1 {
   padding: 30px 10px;
 }
 
-
-
-/*Work-page*/
+/* Work-page */
 #work-page #work {
   padding-top: 0;
 }
 
-/*Knitcase*/
+/* Knitcase */
 .title {
   padding-top: 200px;
   padding-bottom: 40px;
@@ -370,7 +372,7 @@ footer h1 {
 }
 
 #knitcase .col-lg-7 {
-padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #knitcase .contents {
@@ -380,7 +382,7 @@ padding-bottom: 20px;
 #knitcase h2 {
   color: #8e2c48;
   padding-top: 30px;
-    clear: both;
+  clear: both;
 }
 
 #knitcase h1 {
@@ -403,14 +405,14 @@ padding-bottom: 20px;
   margin-top: 30px;
 }
 
-#testing1 img, #testing2 img {
+#testing1 img,
+#testing2 img {
   padding: 10px 0;
 }
 
 #odd-image-testing {
   margin-bottom: -20px;
 }
-
 
 #gif-flows figcaption {
   padding-bottom: 20px;
@@ -423,12 +425,12 @@ padding-bottom: 20px;
 }
 
 .col-4 {
-    padding: 0 20px;
-  }
+  padding: 0 20px;
+}
 
 #android-link {
-display: block;
-margin: 20px 0;
+  display: block;
+  margin: 20px 0;
 }
 
 #android img {
@@ -439,7 +441,7 @@ margin: 20px 0;
   margin-bottom: 30px;
 }
 
-/* Quest page*/
+/* Quest page */
 #quest main {
   padding-top: 250px;
   padding-bottom: 150px;
@@ -460,17 +462,22 @@ margin: 20px 0;
   font-size: 16px;
   line-height: 20px;
   width: 50%;
+
   /* place it at the bottom right corner */
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   bottom: 30px;
+
   /* keep it at the top of everything else */
   z-index: 100;
+
   /* hide with opacity */
   opacity: 0;
+
   /* also add a translate effect */
   transform: translateY(100px);
+
   /* and a transition */
   transition: all 0.5s ease;
 }
@@ -517,27 +524,27 @@ Small-Medium devices (400px and larger)
     margin-top: 1.3em;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
-.navtoggle li .icon {
-  padding-top: 40px;
-}
+  .navtoggle li .icon {
+    padding-top: 40px;
+  }
 
-  /*ensures menu links aren't hidden*/
+  /* ensures menu links aren't hidden */
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
-  /*ensures hamburger menu is hidden*/
+  /* ensures hamburger menu is hidden */
   .navtoggle li:last-child {
     display: none;
   }
 
   .logo {
     padding-top: 0;
-      max-width: 100px;
+    max-width: 100px;
   }
 
   main {
@@ -552,12 +559,10 @@ Small-Medium devices (400px and larger)
     padding-bottom: 50px;
   }
 
-
   #hero {
     padding-top: 10em;
     height: 90vh;
   }
-
 
   #work {
     padding: 4em 0;
@@ -571,7 +576,7 @@ Small-Medium devices (400px and larger)
     padding-top: 25px;
   }
 
-  #work>img {
+  #work > img {
     position: relative;
   }
 
@@ -608,7 +613,7 @@ Small-Medium devices (400px and larger)
     visibility: visible;
     text-transform: uppercase;
     font-family: 'Amiko', sans-serif;
-    color: #ffffff;
+    color: #fff;
     font-weight: 400;
   }
 
@@ -635,7 +640,6 @@ Small-Medium devices (400px and larger)
   }
 
   /* Knitcase-page */
-
   #gif-flows {
     display: block;
     padding: 40px 0;
@@ -653,7 +657,6 @@ Small-Medium devices (400px and larger)
   }
 
   /* About-page */
-
   .skills-and-tools {
     display: inline-block;
   }
@@ -667,7 +670,6 @@ Small-Medium devices (400px and larger)
     margin-bottom: -10px;
   }
 
-
   #about-page img {
     display: block;
     width: 50%;
@@ -676,7 +678,6 @@ Small-Medium devices (400px and larger)
     padding-top: 30px;
     padding-bottom: 50px;
   }
-
 
   .title {
     padding-top: 170px;
@@ -692,6 +693,7 @@ Small-Medium devices (400px and larger)
     font-size: 16px;
     line-height: 30px;
     width: 30%;
+
     /* place it at the bottom right corner */
     position: fixed;
     bottom: 60px;
@@ -723,7 +725,6 @@ Small-Medium devices (400px and larger)
     line-height: 1.5em;
   }
 
-
   #about-page footer h1 {
     max-width: 1200px;
     margin-left: auto;
@@ -736,18 +737,17 @@ Small-Medium devices (400px and larger)
     padding-bottom: 40px;
   }
 
-  /*knitcase-page*/
+  /* knitcase-page */
+  #knitcase img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-#knitcase img {
-  display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#knitcase .col-lg-7 img {
-  width: 100%;
-}
+  #knitcase .col-lg-7 img {
+    width: 100%;
+  }
 
   #why-knitting {
     display: block;
@@ -771,11 +771,12 @@ Small-Medium devices (400px and larger)
     padding: 20px 0;
   }
 
-  #testing1 img, #testing2 img {
+  #testing1 img,
+  #testing2 img {
     padding: 2em 0;
   }
 
-#odd-image-testing {
+  #odd-image-testing {
     margin-bottom: -2em;
   }
 
@@ -783,11 +784,9 @@ Small-Medium devices (400px and larger)
     width: 100%;
   }
 
-.col-4 {
-      padding: 0;
-    }
-
-
+  .col-4 {
+    padding: 0;
+  }
 }
 
 /* ==============================
