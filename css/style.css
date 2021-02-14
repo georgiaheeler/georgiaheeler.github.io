@@ -61,7 +61,7 @@ h5 {
 }
 
 #index h5 {
-  font-family: 'Crimson Text', sans-serif;
+  font-family: 'Crimson Text', serif;
   font-size: 2em;
   font-weight: 600;
   line-height: 1.5em;
@@ -80,7 +80,6 @@ img {
 a {
   color: #c2025b;
   text-decoration: none;
-
   /* No underlining */
 }
 
@@ -106,14 +105,12 @@ a:active {
   text-transform: uppercase;
   font-family: 'Amiko', sans-serif;
   color: #fff;
-
   /* needed to override the default link color */
   background-color: #c2025b;
   font-weight: 400;
   padding: 14px 18px;
   border-radius: 3px;
   border-bottom: 2px solid #6e0033;
-
   /* width of the border, type, color */
   transition: 0.5s background-color;
 }
@@ -124,7 +121,6 @@ a:active {
   background-color: #6e0033;
   text-decoration: none;
   color: #fff;
-
   /*  opacity: 0.8; */
 }
 
@@ -157,7 +153,6 @@ a:active {
   margin-top: 0;
 }
 */
-
 .rowvtime {
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -196,13 +191,13 @@ header {
   box-shadow: 0px 4px 5px 0px rgba(80, 68, 92, 0.36);
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -348,8 +343,8 @@ footer h1 {
 
 /* Contact-page */
 #contact-page main {
-  padding-top: 130px;
-/* padding-bottom: 40px; */
+  padding-top: 150px;
+  /* padding-bottom: 40px; */
 }
 
 #contact-page footer {
@@ -463,22 +458,17 @@ footer h1 {
   font-size: 16px;
   line-height: 20px;
   width: 50%;
-
   /* place it at the bottom right corner */
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   bottom: 30px;
-
   /* keep it at the top of everything else */
   z-index: 100;
-
   /* hide with opacity */
   opacity: 0;
-
   /* also add a translate effect */
   transform: translateY(100px);
-
   /* and a transition */
   transition: all 0.5s ease;
 }
@@ -525,7 +515,7 @@ Small-Medium devices (400px and larger)
     margin-top: 1.3em;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
@@ -577,7 +567,7 @@ Small-Medium devices (400px and larger)
     padding-top: 25px;
   }
 
-  #work > img {
+  #work>img {
     position: relative;
   }
 
@@ -623,10 +613,22 @@ Small-Medium devices (400px and larger)
   }
 
   #knitcase .col-lg-7 {
+    width: 58%;
+  }
+
+  #knitcase .col-lg-5 {
+    width: 42%;
+  }
+
+  #knitcase .col-lg-5 {
     padding-right: inherit;
   }
 
-  .col-md-6 {
+  #about-page .col-lg-5 {
+    padding-right: 0;
+  }
+
+  #index .col-md-6 {
     width: 50%;
   }
 
@@ -645,8 +647,6 @@ Small-Medium devices (400px and larger)
   }
 
   /* Knitcase-page */
-
-
   #gif-flows {
     display: block;
     padding: 40px 0;
@@ -700,7 +700,6 @@ Small-Medium devices (400px and larger)
     font-size: 16px;
     line-height: 30px;
     width: 30%;
-
     /* place it at the bottom right corner */
     position: fixed;
     bottom: 60px;
@@ -712,6 +711,7 @@ Small-Medium devices (400px and larger)
   Large devices (1024px or larger)
   ================================= */
 @media only screen and (min-width: 1024px) {
+
   .col-lg-7 {
     width: 58%;
   }
