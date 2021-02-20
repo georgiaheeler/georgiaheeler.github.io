@@ -442,10 +442,13 @@ footer h1 {
 /* Hero styling */
 #hero {
   background-color: #fcf5f5;
-  display: inline-block;
   width: 100%;
-  height: 80%;
+  height: 100vh;
   padding: 72px 10px;
+}
+
+#hero .container {
+vertical-align: middle;
 }
 
 #hero p {
@@ -642,7 +645,6 @@ Small-Medium devices (400px and larger)
 ================================= */
 @media only screen and (min-width: 400px) {
   #hero {
-    height: 80vh;
     padding-top: 120px;
   }
 }
@@ -702,9 +704,9 @@ Small-Medium devices (400px and larger)
   }
 
   #hero {
-    padding-top: 10em;
-    height: 90vh;
+    padding-top: 160px;
   }
+
 
   #work {
     padding: 4em 0;
@@ -871,7 +873,7 @@ Small-Medium devices (400px and larger)
   }
 
   #hero {
-    padding: 5em 10px;
+    padding: 140px 10px;
     font-size: 1.5em;
     line-height: 1.5em;
   }
