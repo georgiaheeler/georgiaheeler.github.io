@@ -448,7 +448,7 @@ footer h1 {
 }
 
 #hero .container {
-vertical-align: middle;
+  vertical-align: middle;
 }
 
 #hero p {
@@ -458,6 +458,49 @@ vertical-align: middle;
 #hero span {
   display: block;
 }
+
+.ctn-icon {
+  animation: jump-arrow 2.5s infinite;
+  bottom: 0;
+  display: block;
+  font-size: 26px;
+  height: 1.5em;
+  left: 50%;
+  line-height: 1.5em;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 1.5em;
+}
+
+.ctn-icon:hover,
+.ctn-icon:focus,
+.ctn-icon:active {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes jump-arrow {
+  0%,
+  20%,
+  55%,
+  80%,
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  40% {
+    transform: translate3d(-50%, -15px, 0);
+  }
+
+  70% {
+    transform: translate3d(-50%, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(-50%, -5px, 0);
+  }
+}
+
 
 /* About */
 #about-page main {
@@ -707,6 +750,9 @@ Small-Medium devices (400px and larger)
     padding-top: 160px;
   }
 
+.ctn-icon {
+    padding-bottom: 50px;
+  }
 
   #work {
     padding: 4em 0;
