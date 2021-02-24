@@ -460,47 +460,8 @@ footer h1 {
 }
 
 .ctn-icon {
-  animation: jump-arrow 2.5s infinite;
-  bottom: 0;
-  display: block;
-  font-size: 26px;
-  height: 1.5em;
-  left: 50%;
-  line-height: 1.5em;
-  position: absolute;
-  text-align: center;
-  transform: translateX(-50%);
-  width: 1.5em;
+  visibility: hidden;
 }
-
-.ctn-icon:hover,
-.ctn-icon:focus,
-.ctn-icon:active {
-  color: rgba(0, 0, 0, 0.7);
-}
-
-@keyframes jump-arrow {
-  0%,
-  20%,
-  55%,
-  80%,
-  100% {
-    transform: translate3d(-50%, 0, 0);
-  }
-
-  40% {
-    transform: translate3d(-50%, -15px, 0);
-  }
-
-  70% {
-    transform: translate3d(-50%, -10px, 0);
-  }
-
-  90% {
-    transform: translate3d(-50%, -5px, 0);
-  }
-}
-
 
 /* About */
 #about-page main {
@@ -620,6 +581,20 @@ footer h1 {
   margin: 0;
 }
 
+
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row-flex {
+  flex: 1;
+  width: 30%;
+}
+
 #android-link {
   display: block;
   margin: 20px 0;
@@ -694,6 +669,52 @@ Small-Medium devices (400px and larger)
     padding-top: 120px;
   }
 
+
+
+    .ctn-icon {
+      visibility: visible;
+      animation: jump-arrow 2.5s infinite;
+      bottom: 30px;
+      display: block;
+      font-size: 26px;
+      height: 1.5em;
+      left: 50%;
+      line-height: 1.5em;
+      position: absolute;
+      text-align: center;
+      transform: translateX(-50%);
+      width: 1.5em;
+    }
+
+    .ctn-icon:hover,
+    .ctn-icon:focus,
+    .ctn-icon:active {
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    @keyframes jump-arrow {
+      0%,
+      20%,
+      55%,
+      80%,
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
+
+      40% {
+        transform: translate3d(-50%, -15px, 0);
+      }
+
+      70% {
+        transform: translate3d(-50%, -10px, 0);
+      }
+
+      90% {
+        transform: translate3d(-50%, -5px, 0);
+      }
+    }
+
+
   #contact-page main {
         padding-top: 200px;
 }
@@ -754,10 +775,6 @@ Small-Medium devices (400px and larger)
 
   #hero {
     padding-top: 160px;
-  }
-
-.ctn-icon {
-    padding-bottom: 50px;
   }
 
   #work {
@@ -999,9 +1016,6 @@ Small-Medium devices (400px and larger)
     margin-bottom: -40px;
   }
 
-  #final-screens img {
-    width: 100%;
-  }
 
   .col-4 {
     padding: 0;
