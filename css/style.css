@@ -474,6 +474,7 @@ footer h1 {
 }
 */
 
+
 #about-page h2 {
   margin: 10px 0;
 }
@@ -483,9 +484,6 @@ footer h1 {
   margin-bottom: -10px;
 }
 
-.about-content {
-  padding: 0 25px;
-}
 
 #cv {
   margin: 40px 0;
@@ -878,6 +876,10 @@ Small-Medium devices (400px and larger)
   /* About-page */
   #about-page main {
     padding-top: 200px;
+  }
+
+  .about-content {
+    padding: 0 10px;
   }
 
   #about-page h2 {
