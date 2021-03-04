@@ -469,9 +469,10 @@ footer h1 {
   padding-bottom: 40px;
 }
 
-#about-page img {
+/*#about-page img {
   padding: 0 10px;
 }
+*/
 
 #about-page h2 {
   margin: 10px 0;
@@ -480,6 +481,10 @@ footer h1 {
 #about-page h3 {
   margin-top: 20px;
   margin-bottom: -10px;
+}
+
+.about-content {
+  padding: 0 25px;
 }
 
 #cv {
