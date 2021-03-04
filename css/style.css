@@ -565,6 +565,7 @@ footer h1 {
   margin-bottom: -20px;
 }
 
+
 #gif-flows figcaption {
   padding-bottom: 20px;
   padding-top: 40px;
@@ -580,16 +581,6 @@ footer h1 {
   margin: 0;
 }
 
-.row-flex {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.row-flex > img {
-  padding: 10px;
-  width: 30%;
-}
 
 #android-link {
   display: block;
@@ -729,7 +720,7 @@ Small-Medium devices (400px and larger)
     margin-top: 1.3em;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
@@ -921,13 +912,15 @@ Small-Medium devices (400px and larger)
 /* ==============================
   iPad view(767px-1000px)
   ================================= */
-
 @media only screen and (min-width: 767px) and (max-width: 1000px) {
-#hero{
-height: 60vh;
-}
-}
+  #hero {
+    height: 60vh;
+  }
 
+  .ctn-icon {
+display: none;
+  }
+}
 
 /* ==============================
   Large devices (1024px or larger)
@@ -1021,6 +1014,11 @@ height: 60vh;
   #odd-image-testing {
     margin-bottom: -40px;
   }
+
+  #final-screens img {
+    width: 80%;
+  }
+
 
   .col-4 {
     padding: 0;
