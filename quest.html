@@ -13,42 +13,285 @@
   <script src="https://kit.fontawesome.com/78589d5308.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="quest">
+<body>
   <header>
     <div class="container">
-          <div class="navtoggle" id="myNavtoggle">
-      <a href="index.html">
-        <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 558 558">
-          <g id="Group_5" data-name="Group 5" transform="translate(-14 -378)">
-            <circle id="Ellipse_1" data-name="Ellipse 1" cx="279" cy="279" r="279" transform="translate(14 378)" />
-            <g id="Group_3" data-name="Group 3" transform="translate(144 509)" opacity="0.7">
-              <path id="Path_1" data-name="Path 1"
-                d="M4.3,34.754Q4.3-6.36,31.8-35.748T99.266-65.137q20.557,0,68.621,13.029,1.158,33.008,1.158,35.9,0,4.343-6.08,4.343-2.9,0-3.764-1.448-7.818-39.667-59.066-39.667-28.954,0-48.353,24.611T32.382,30.99q0,32.139,21.281,59.211t53.42,27.072q25.48,0,37.64-6.37,2.027-.869,2.027-4.343l-.29-23.742V80.791q0-18.82-2.316-24.9-1.158-2.9-9.41-4.633a66.953,66.953,0,0,0-12.885-1.737q-1.158,0-1.158-3.619t1.158-4.777q37.061,1.448,37.93,1.448,2.316,0,31.27-1.448a12.832,12.832,0,0,1,.579,4.054q0,4.343-1.158,4.343-1.737,0-7.962,1.882a49.479,49.479,0,0,0-8.831,3.33c-1.93,1.351-5.212,8.038-5.212,19.62,0,4.054-.29,3.737,0,8.466s0,29.07,0,29.649c0,1.544-2.268,4.565-5.646,5.819s-5.55,2.075-6.515,2.461-3.137,1.11-6.515,2.172a76.2,76.2,0,0,1-8.107,2.172q-3.04.579-8.686,1.737a92.962,92.962,0,0,1-10.713,1.592q-5.067.434-11.871.869t-14.332.434q-38.219,0-65-28.085T4.3,34.754Z"
-                transform="translate(-4.297 64.137)" fill="#fff" />
-              <path id="Path_3" data-name="Path 3"
-                d="M145.564-38.76V-89.291l-.574-1.148Q118-91.014,102.5-91.014q-44.215,0-44.215,1.436v49.67q0,16.652,2.584,26.7.574,2.01,8.039,3.876T79.242-7.465q.861,0,1,3.445A13.057,13.057,0,0,1,79.816.861Q51.105-.574,46.512-.574q-1.436,0-34.453,1.436Q10.91-.287,10.91-3.445q0-4.02,1.148-4.02A53.011,53.011,0,0,0,23.112-9.187q7.321-1.723,8.183-4.02Q33.3-20.959,33.3-38.76v-111.4q0-17.8-2.01-25.553-.861-2.3-8.183-4.163a49.236,49.236,0,0,0-11.054-1.866q-1.148,0-1.148-3.732,0-3.445,1.148-4.594,3.732.287,15.217,1t19.236.718q5.742,0,11.2-.287t11.771-.718q6.316-.431,10.336-.718.574,1.148.431,4.737t-1,3.589q-2.871,0-10.336,2.01t-8.039,4.02q-2.584,10.049-2.584,26.7v42.779l.574.861q28.137.574,43.641.574,16.652,0,42.492-.574a1.654,1.654,0,0,0,.574-1.148v-43.641q0-17.8-2.01-25.553-.861-2.3-8.183-4.163a49.236,49.236,0,0,0-11.054-1.866q-1.148,0-1.148-3.589t1.148-4.737q3.445.287,15.217,1t19.523.718q5.455,0,10.91-.287t11.628-.718q6.173-.431,10.192-.718a13.8,13.8,0,0,1,.574,4.307q0,4.02-1.148,4.02-2.871,0-10.336,2.01t-8.039,4.02q-2.3,8.9-2.3,26.7v109.1q0,17.8,2.3,26.7.574,2.01,8.039,3.876t10.336,1.866q1.148,0,1.148,4.307a12.725,12.725,0,0,1-.574,4.02Q163.078-.574,159.059-.574q-1.723,0-34.74,1.436Q123.17-.287,123.17-3.876t1.148-3.589a53.011,53.011,0,0,0,11.054-1.723q7.321-1.723,8.183-4.02Q145.564-20.959,145.564-38.76Z"
-                transform="translate(105.856 295.405)" fill="#fff" />
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 558 558">
+            <g id="Group_5" data-name="Group 5" transform="translate(-14 -378)">
+              <circle id="Ellipse_1" data-name="Ellipse 1" cx="279" cy="279" r="279" transform="translate(14 378)" />
+              <g id="Group_3" data-name="Group 3" transform="translate(144 509)" opacity="0.7">
+                <path id="Path_1" data-name="Path 1"
+                  d="M4.3,34.754Q4.3-6.36,31.8-35.748T99.266-65.137q20.557,0,68.621,13.029,1.158,33.008,1.158,35.9,0,4.343-6.08,4.343-2.9,0-3.764-1.448-7.818-39.667-59.066-39.667-28.954,0-48.353,24.611T32.382,30.99q0,32.139,21.281,59.211t53.42,27.072q25.48,0,37.64-6.37,2.027-.869,2.027-4.343l-.29-23.742V80.791q0-18.82-2.316-24.9-1.158-2.9-9.41-4.633a66.953,66.953,0,0,0-12.885-1.737q-1.158,0-1.158-3.619t1.158-4.777q37.061,1.448,37.93,1.448,2.316,0,31.27-1.448a12.832,12.832,0,0,1,.579,4.054q0,4.343-1.158,4.343-1.737,0-7.962,1.882a49.479,49.479,0,0,0-8.831,3.33c-1.93,1.351-5.212,8.038-5.212,19.62,0,4.054-.29,3.737,0,8.466s0,29.07,0,29.649c0,1.544-2.268,4.565-5.646,5.819s-5.55,2.075-6.515,2.461-3.137,1.11-6.515,2.172a76.2,76.2,0,0,1-8.107,2.172q-3.04.579-8.686,1.737a92.962,92.962,0,0,1-10.713,1.592q-5.067.434-11.871.869t-14.332.434q-38.219,0-65-28.085T4.3,34.754Z"
+                  transform="translate(-4.297 64.137)" fill="#fff" />
+                <path id="Path_3" data-name="Path 3"
+                  d="M145.564-38.76V-89.291l-.574-1.148Q118-91.014,102.5-91.014q-44.215,0-44.215,1.436v49.67q0,16.652,2.584,26.7.574,2.01,8.039,3.876T79.242-7.465q.861,0,1,3.445A13.057,13.057,0,0,1,79.816.861Q51.105-.574,46.512-.574q-1.436,0-34.453,1.436Q10.91-.287,10.91-3.445q0-4.02,1.148-4.02A53.011,53.011,0,0,0,23.112-9.187q7.321-1.723,8.183-4.02Q33.3-20.959,33.3-38.76v-111.4q0-17.8-2.01-25.553-.861-2.3-8.183-4.163a49.236,49.236,0,0,0-11.054-1.866q-1.148,0-1.148-3.732,0-3.445,1.148-4.594,3.732.287,15.217,1t19.236.718q5.742,0,11.2-.287t11.771-.718q6.316-.431,10.336-.718.574,1.148.431,4.737t-1,3.589q-2.871,0-10.336,2.01t-8.039,4.02q-2.584,10.049-2.584,26.7v42.779l.574.861q28.137.574,43.641.574,16.652,0,42.492-.574a1.654,1.654,0,0,0,.574-1.148v-43.641q0-17.8-2.01-25.553-.861-2.3-8.183-4.163a49.236,49.236,0,0,0-11.054-1.866q-1.148,0-1.148-3.589t1.148-4.737q3.445.287,15.217,1t19.523.718q5.455,0,10.91-.287t11.628-.718q6.173-.431,10.192-.718a13.8,13.8,0,0,1,.574,4.307q0,4.02-1.148,4.02-2.871,0-10.336,2.01t-8.039,4.02q-2.3,8.9-2.3,26.7v109.1q0,17.8,2.3,26.7.574,2.01,8.039,3.876t10.336,1.866q1.148,0,1.148,4.307a12.725,12.725,0,0,1-.574,4.02Q163.078-.574,159.059-.574q-1.723,0-34.74,1.436Q123.17-.287,123.17-3.876t1.148-3.589a53.011,53.011,0,0,0,11.054-1.723q7.321-1.723,8.183-4.02Q145.564-20.959,145.564-38.76Z"
+                  transform="translate(105.856 295.405)" fill="#fff" />
+              </g>
             </g>
-          </g>
-        </svg>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#work">My Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
-    </div>
+          </svg>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#work">My Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
-  <main class="container">
-      <div class="case-study-content">
-        <div>
-      <img src="img/quest/quest-casestudy.jpg" alt="Image of Quest case study">
+
+  <main id="quest" class="container">
+    <div class="case-study-content">
+      <div class="title">
+        <h1 class="quest-black">Quest
+        </h1>
+        <h5 class="quest-black">Money-saving app
+        </h5>
+        <h3 class="quest-black">
+          Concept app design
+        </h3>
       </div>
+      <div class="row">
+        <div class="contents col-lg-5">
+          <h3 class="quest-black"> Jump to:</h3>
+          <ol>
+            <li><a href="#overview">Overview</a></li>
+            <li> <a href="#objective">Objective</a></li>
+            <li> <a href="#user-flows">User flows</a></li>
+            <li> <a href="#wireframing">Wireframing</a></li>
+            <li> <a href="#testing">Usability testing</a></li>
+            <li> <a href="#branding">Branding</a></li>
+            <li> <a href="#ui-design">UI design</a></li>
+            <li> <a href="#final-screens">Final screens</a></li>
+            <li> <a href="#reflection">Reflection</a></li>
+          </ol>
+        </div>
+        <div class="col-lg-7">
+          <picture id="quest-image">
+            <source srcset="img/quest/quest.jpg" media="(max-width:767px)">
+            <img src="img/quest/quest.jpg" alt="Image of Quest project">
+          </picture>
+        </div>
+      </div>
+      <div class="full-width">
+        <img src="https://res.cloudinary.com/gheeler/image/upload/v1625077796/decor1_de73tp.png">
+      </div>
+      <div class="anchor" id="overview">
+        <h2 class="quest-black">OVERVIEW</h2>
+        <h4>Role:</h4>
+        <p>UI Designer</p>
+        <h4>Context: </h4>
+        <p>Quest is a concept fintech app that I designed on my CareerFoundry UI course. </p>
+        <h4>Tools & resources: </h4>
+        <p>Figma, Useberry</p>
+      </div>
+      <div class="anchor" id="objective">
+        <h2 class="quest-black">OBJECTIVE
+        </h2>
+        <p>The brief was to design an app that helps people to save money quickly in preparation for a big purchase or expenditure.<br> Quest allows users to create savings goals, keep track of progress, and empowers users to act if they fall behind.
+        </p>
+        <h4>The 5 ‘W’s</h4>
+        <p>Noting the 5 ‘W’s helped to ensure my designs remained user-centred throughout the design process:
+        </p>
+        </h2>
+        <img src="https://res.cloudinary.com/gheeler/image/upload/v1624993205/5ws_qp7m3b.png" alt="Screenshot of the 5 'W's">
+      </div>
+    </div>
+    <div id="challenges">
+      <h3 class="quest-black">CHALLENGES</h3>
+      <div class="row">
+        <div class="col-2-lg">
+          <h4>Complexity</h4>
+          <p>Designing for complex tasks and displaying data-heavy visuals could potentially result in a cluttered and confusing interface. My goal was to keep the interface as clean and simple as possible,
+            to ensure users would not be distracted from completing their money-saving goals.
+          </p>
+          <div class="text-arrow">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
+          <p>Use a varied colour palette but apply sparingingly to assist with data interpretation.</p>
+        </div>
+        <div class="col-2-lg">
+          <h4>Advanced features</h4>
+          <p>In order to reduce the effort of tasks (‘user will input data when spending and receiving money’) and make the app as helpful as possible (‘tells them what they can do to cut costs and save money’),
+            I needed to provide more advanced solutions.
+          </p><br>
+          <div class="text-arrow">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </div>
+        <p>Use open-banking API, so income and expenses are recorded automatically, and have an algorithm that calculates how much users need to save each week to reach their goals.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="full-width">
+      <img src="https://res.cloudinary.com/gheeler/image/upload/v1625080468/Group_257_piglqo.png">
+    </div>
+    <div class="anchor" id="user-flows">
+      <h2 class="quest-black">USER FLOWS</h2>
+      <div class="div-padding">
+      <h3 class="quest-black">USER STORIES</h3>
+      <p>The brief provided four user stories from which I was to design my money-saving tool from:
+      </p>
+      <picture>
+        <img src="https://res.cloudinary.com/gheeler/image/upload/v1625341223/user_stories_kqch4x.png" alt="Images of user stories">
+      </picture>
+    </div>
+      <h3 class="quest-black">USER FLOW DIAGRAM</h3>
+      <p>From the user stories I was able to define the corresponding Jobs to Be Done (JTBD) and feature requirements, enabling me to map out the user flow diagram more easily.
+        See breakdown of JTBD and feature requirements <a href="files/quest/jtbd.pdf" target="_blank">here</a>.
+      </p>
+      <picture>
+      <img src="https://res.cloudinary.com/gheeler/image/upload/v1624993205/user_flow_vi3jlk.png" art="User flow diagram"
+      </picture>
+    </div>
+    <div class="anchor" id="wireframing">
+      <div class="row">
+              <h2 class="quest-black">WIREFRAMiING</h2>
+          <h3 class="quest-black">LOW FIDELITY</h3>
+        <div class="col-lg-5 col-xl-4 div-padding">
+          <p>It was time to start sketching out the general layout, placement of elements, and appearance of my screens before opening up Figma. This phase allowed me to quickly try out ideas before committing to any designs.
+          </p>
+        </div>
+        <div class="col-lg-7 col-xl-8 div-padding">
+          <picture>
+            <img src="https://res.cloudinary.com/gheeler/image/upload/v1625342087/lowfi_ir1yge.jpg" alt="Low-fi wireframe sketches">
+          </picture>
+        </div>
+      </div>
+
+      <h3 class="quest-black">MID-FIDELITY</h3>
+      <picture>
+          <img src="https://res.cloudinary.com/gheeler/image/upload/v1625343605/Group_86_gej3vc.png" alt="Mid-fi wireframes" class="div-padding">
+      </picture>
+    <br>
+      <div class="prototype">
+        <figcaption>Click below to interact with the Quest prototype </figcaption><br>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="650"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuffehXNGfH4AUid87Gc9dN%2FQuest-clickable-prototype%3Fnode-id%3D2%253A0%26scaling%3Dscale-down%26page-id%3D0%253A1" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="full-width">
+      <img src="https://res.cloudinary.com/gheeler/image/upload/v1625077796/decor1_de73tp.png">
+    </div>
+    <div class="anchor" id="testing">
+      <h2 class="quest-black">USABILITY TESTING</h2>
+      <p>I now needed to validate my designs by testing them with potential users, to see how well they could navigate the app and complete primary tasks. I conducted five testing sessions; four were moderated either in-person or via Skype, and one
+        was unmoderated and self-recorded via Screencast-o-matic. All participants were asked to complete two scenerio-based tasks via Useberry.
+      </p>
+      <p>See full testing schedule and results synthesis <a href="files/quest/usability_testing.pdf" target="_blank">here</a>.
+      </p>
+      <picture>
+        <img src="https://res.cloudinary.com/gheeler/image/upload/v1625075648/Group_677_lqnx0t.png" alt="Testing instructions" class="div-padding">
+      </picture>
+      <h3 class="quest-black">RESULTS AND FEEDBACK</h3>
+      <p>Overall, the prototype was well-received and all five participants successfully completed both tasks.</p>
+      <h4>Positives</h4>
+      <p>The most common positive feedback centred around the advanced features and the interface being user-friendly.</p>
+      <div class="row quest-quote">
+        <div class="col-4">
+          <p>“I like that you have an overview of all your regular payments - you can clearly see every month you’re spending £10 on Netflix”
+          </p>
+        </div>
+        <div class="col-4">
+          <p> “It’s simple, which is really nice and easy to understand”
+          </p>
+        </div>
+        <div class="col-4">
+          <p> “The tips regarding overspending is my favourite feature, that’s very useful”
+          </p>
+        </div>
+      </div>
+      <h4>Problems</h4>
+      <p>Despite a lot of encouraging feedback, there were quite a few problems that were either verbalised while ‘thinking aloud’, or implied from participants’ facial expressions and clicking behaviour.
+      </p>
+      <picture>
+      <img src="https://res.cloudinary.com/gheeler/image/upload/v1624993206/issue1_dlaupx.png" alt="Image of problem one and changes made" class="div-padding">
+    </picture>
+      <picture>
+      <img src="https://res.cloudinary.com/gheeler/image/upload/v1624993205/issue2_dajqzp.png" alt="Image of problem two and changes made" class="div-padding">
+    </picture>
+    <p>I rated the above and all remaining issues in line with Nielsen Norman Group’s usability problems rating scale and provided appropriate solutions accordingly.
+    </p>
+    </div>
+    <div class="full-width">
+      <img src="https://res.cloudinary.com/gheeler/image/upload/v1625080468/Group_257_piglqo.png">
+    </div>
+    <div class="anchor" id="branding">
+      <h2 class="quest-black">BRANDING</h2>
+      <h3 class="quest-black">LOGO DESIGN</h3>
+      <p>The name and logo were developed through jotting down words and imagery associated with money, saving, growth and good fortune. I chose ‘Quest’ as this best embodied the money-saving journey depicted by the brief.
+      </p>
+      <picture>
+        <img src="https://res.cloudinary.com/gheeler/image/upload/v1625342765/logo_adsnvu.jpg" alt="Logo sketches and name ideation">
+      </picture>
+      <p>Orange was chosen to mirror the colour of goldfish, which is a symbol of good luck and prosperity. Orange is also associated with motivation and positivity, which reaffirmed its use in Quest.
+      </p>
+      <p>Quest blue, in contrast, was selected owing to its embodiment of trust and professionalism. The colourful gradient used in the final design helps project a bold yet humble presence.
+      </p>
+      <picture>
+        <img src="https://res.cloudinary.com/gheeler/image/upload/v1624993208/colours_ac0gjs.png" alt="Moodboard of colour and logo inspiration"><br>
+        <img src="https://res.cloudinary.com/gheeler/image/upload/v1625343247/quest_phone_n2wjnt.png" alt="Primary and secondary logos" class="div-padding">
+      </picture>
+      <h3 class="quest-black">GUIDING PRINCIPLES</h3>
+      <h4>Mission</h4>
+      <p>Our mission is to create a smooth-saving journey for all. We do this by helping our users to easily manage their money and by educating them on how to be money-smart. We believe education forms the basis of sustained money-smart behaviour
+        that will continue outside of and beyond their use of Quest.
+      </p>
+      <h4>Vision</h4>
+      <p>Knowing how to be smart with your money shouldn’t come at a cost. Our vision is to make saving easy and accessible for everyone.
+      </p>
+      <h4>Values</h4>
+      <p class="quest-black"><b><i>Transparent</i></b></p>
+      <p>Being honest and open at every step of the journey is integral to building trust with our users. Trust forms the foundation from which users rely on us to manage their financial information and to help them save. Our honesty also ensures
+        users’ goals are realistic, so they remain motivated and can continue to rely on us throughout their journey.
+      </p>
+      <p class="quest-black"><b><i>Driven</i></b></p>
+      <p>We are determined to improve the lives of our users by helping them gain better control of their finances. We want our users to live worry-free by being able to afford the things they want and need in life.
+      </p>
+    </div>
+    <div class="anchor" id="ui-design">
+      <h2 class="quest-black">UI DESIGN</h2>
+      <h3 class="quest-black">STYLE GUIDE</h3>
+      <picture>
+        <img src="https://res.cloudinary.com/gheeler/image/upload/v1624993554/Group_434_ng5mau.png" alt="Style guide">
+      </picture>
+    </div>
+    <div class="full-width">
+      <img src="https://res.cloudinary.com/gheeler/image/upload/v1625077796/decor1_de73tp.png">
+    </div>
+    <div class="anchor" id="final-screens">
+      <h2 class="quest-black">FINAL SCREENS</h2>
+          <img src="https://res.cloudinary.com/gheeler/image/upload/v1624993208/homepage_zxiug6.png" alt="Image of homepage/dashboard progression" class="div-padding">
+      <img src="https://res.cloudinary.com/gheeler/image/upload/v1624992994/mockups_hqde7h.png" alt="Images of final screens">
+    </div>
+    <div class="anchor" id="reflection">
+      <div class="div-padding">
+      <h2 class="quest-black">REFLECTION</h2>
+      <p class="quest-black"><b><i>Learning new tools</i></b></p>
+      <p>I used this project as an opportunity to learn Figma and it was extremely beneficial. After attending Figma’s (virtual) Config Europe 2020 and watching a demo of their new updates,
+        I was really impressed by how powerful the tool appeared to be and the scope of its prototype function. In terms of practicality, I particularly liked Figma’s document set-up since
+        you can have multiple pages under a single document, whereas XD requires you to make multiple documents. Also, although not relevant to this project, the ease at which teams can
+        collaborate on projects and see real-time changes makes it all the more appealing.
+      </p>
+      <p class="quest-black"><b><i>Less is more</i></b></p>
+      <p>I maintained my learnings from previous projects around ‘the simpler, the better’. This was particularly important given the interface’s data-heavy nature and the complex functionality and feature requirements.
+        Using less colour and more spacing paid off with a simple, clean interface.
+      </p>
+    </div>
+    </div>
+    <div class="prototype">
+      <figcaption>Click below to interact with the Quest prototype </figcaption><br>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="650"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FuffehXNGfH4AUid87Gc9dN%2FQuest-clickable-prototype%3Fkind%3D%26node-id%3D201%253A1189%26scaling%3Dscale-down" allowfullscreen></iframe>
+    </div>
+    <br>
+          <img src="https://res.cloudinary.com/gheeler/image/upload/v1625345576/website_2_lwonkw.png" alt="Image of marketing site mockup">
     </div>
 
     <div class="next-previous-container round">
@@ -56,13 +299,13 @@
         <div class="target">
           <div class="content">
             <div class="rounded"></div>
-                <a href=".html">
-            <svg height="32px" class="arrow" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path fill="#161616"
-                d="M28,14H8.8l4.62-4.62C13.814,8.986,14,8.516,14,8c0-0.984-0.813-2-2-2c-0.531,0-0.994,0.193-1.38,0.58l-7.958,7.958  C2.334,14.866,2,15.271,2,16s0.279,1.08,0.646,1.447l7.974,7.973C11.006,25.807,11.469,26,12,26c1.188,0,2-1.016,2-2  c0-0.516-0.186-0.986-0.58-1.38L8.8,18H28c1.104,0,2-0.896,2-2S29.104,14,28,14z" />
-            </svg>
-            <h4 class="next-previous-button">Previous project</h4>
-                </a>
+            <a href=".html">
+              <svg height="32px" class="arrow" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="#161616"
+                  d="M28,14H8.8l4.62-4.62C13.814,8.986,14,8.516,14,8c0-0.984-0.813-2-2-2c-0.531,0-0.994,0.193-1.38,0.58l-7.958,7.958  C2.334,14.866,2,15.271,2,16s0.279,1.08,0.646,1.447l7.974,7.973C11.006,25.807,11.469,26,12,26c1.188,0,2-1.016,2-2  c0-0.516-0.186-0.986-0.58-1.38L8.8,18H28c1.104,0,2-0.896,2-2S29.104,14,28,14z" />
+              </svg>
+              <h4 class="next-previous-button">Previous project</h4>
+            </a>
           </div>
         </div>
       </div>
@@ -71,51 +314,51 @@
           <div class="content reversed" style="float:right">
             <div class="rounded"></div>
             <a href="knitcase.html">
-            <svg height="32px" class="arrow reverse" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path fill="#161616"
-                d="M28,14H8.8l4.62-4.62C13.814,8.986,14,8.516,14,8c0-0.984-0.813-2-2-2c-0.531,0-0.994,0.193-1.38,0.58l-7.958,7.958  C2.334,14.866,2,15.271,2,16s0.279,1.08,0.646,1.447l7.974,7.973C11.006,25.807,11.469,26,12,26c1.188,0,2-1.016,2-2  c0-0.516-0.186-0.986-0.58-1.38L8.8,18H28c1.104,0,2-0.896,2-2S29.104,14,28,14z" />
-            </svg>
-            <h4 class="next-previous-button">Next project</h4>
-          </a>
+              <svg height="32px" class="arrow reverse" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="#161616"
+                  d="M28,14H8.8l4.62-4.62C13.814,8.986,14,8.516,14,8c0-0.984-0.813-2-2-2c-0.531,0-0.994,0.193-1.38,0.58l-7.958,7.958  C2.334,14.866,2,15.271,2,16s0.279,1.08,0.646,1.447l7.974,7.973C11.006,25.807,11.469,26,12,26c1.188,0,2-1.016,2-2  c0-0.516-0.186-0.986-0.58-1.38L8.8,18H28c1.104,0,2-0.896,2-2S29.104,14,28,14z" />
+              </svg>
+              <h4 class="next-previous-button">Next project</h4>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    </main>
-    <footer>
-      <div id="contact">
-        <div class="container">
-          <h1>Contact
-          </h1>
-          <p>
-            If you'd like to reach out about work opportunities, please email me at <a href="mailto:georgia.heeler@gmail.com">georgia.heeler@gmail.com</a>.
-            <br>You can also find me through my social accounts below.
-          </p>
-          <div id="social-media">
-            <!--Social Media Layout and Placeholders-->
-            <a href="https://www.linkedin.com/in/georgia-heeler/" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://dribbble.com/gheeler" target="_blank">
-              <i class="fab fa-dribbble-square"></i>
-            </a>
-            <a href="https://www.behance.net/gheeler" target="_blank">
-              <i class="fab fa-behance-square"></i>
-            </a>
-          </div>
-  <br>
-          <p>Copyright GEORGIA HEELER 2021</p>
+  </main>
+  <footer>
+    <div id="contact">
+      <div class="container">
+        <h1>Contact
+        </h1>
+        <p>
+          If you'd like to reach out about work opportunities, please email me at <a href="mailto:georgia.heeler@gmail.com">georgia.heeler@gmail.com</a>.
+          <br>You can also find me through my social accounts below.
+        </p>
+        <div id="social-media">
+          <!--Social Media Layout and Placeholders-->
+          <a href="https://www.linkedin.com/in/georgia-heeler/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://dribbble.com/gheeler" target="_blank">
+            <i class="fab fa-dribbble-square"></i>
+          </a>
+          <a href="https://www.behance.net/gheeler" target="_blank">
+            <i class="fab fa-behance-square"></i>
+          </a>
         </div>
+        <br>
+        <p>Copyright GEORGIA HEELER 2021</p>
       </div>
-      <div class="scroll-button">
-        <button class="scrollToTopBtn"><i class="fas fa-chevron-up"></i><span>Scroll to top</span> </button>
-      </div>
-    </footer>
+    </div>
+    <div class="scroll-button">
+      <button class="scrollToTopBtn"><i class="fas fa-chevron-up"></i><span>Scroll to top</span> </button>
+    </div>
+  </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
-  </body>
+</body>
 
-  </html>
+</html>

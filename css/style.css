@@ -22,13 +22,13 @@ body {
   background-color: inherit;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  color: #433237;
   line-height: 1.5em;
 }
 
 h1 {
   font-size: 1em;
   font-weight: 700;
+    color: #433237;
   text-transform: uppercase;
   letter-spacing: 2pt;
   padding: 0 10px;
@@ -46,11 +46,13 @@ h2 {
 h3 {
   font-size: 1.2em;
   font-weight: 600;
+    color: #433237;
 }
 
 h4 {
-  font-family: 'Amiko', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #7e7278;
+  margin: 0;
 }
 
 h5 {
@@ -71,6 +73,8 @@ h5 {
 
 figcaption {
   font-style: italic;
+  font-size: 0.9em;
+  text-align: center;
 }
 
 img {
@@ -518,12 +522,23 @@ footer h1 {
   margin-bottom: 40px;
 }
 
-/* Knitcase */
 .title {
   padding-top: 130px;
   padding-bottom: 10px;
+  display: block;
   text-align: center;
 }
+
+.text-arrow {
+  display: block;
+  text-align: center;
+}
+
+.div-padding {
+  padding-bottom: 30px;
+}
+
+/* Knitcase */
 
 #knitcase .col-lg-7 {
   padding-bottom: 20px;
@@ -533,14 +548,37 @@ footer h1 {
   padding-bottom: 30px;
 }
 
+#knitcase > p,
+h1,
+h5 {
+  color: #433237;
+}
+
 #knitcase h2 {
   color: #8e2c48;
   padding-top: 30px;
   clear: both;
 }
 
+#knitcase h4 {
+  font-family: 'Amiko', sans-serif;
+}
+
 #knitcase h1 {
   padding: 0;
+}
+
+.knitcase-quote {
+  color: #8e2c48;
+  font-size: 16pt;
+  font-style: italic;
+  font-weight: 600;
+line-height: 1.6;
+}
+
+.knitcase-changes {
+      clear: both;
+      padding-top: 6px;
 }
 
 #knitcase .container {
@@ -568,7 +606,6 @@ footer h1 {
   margin-bottom: -20px;
 }
 
-
 #gif-flows figcaption {
   padding-bottom: 20px;
   padding-top: 40px;
@@ -588,6 +625,7 @@ footer h1 {
 #android-link {
   display: block;
   margin: 20px 0;
+  text-align: center;
 }
 
 #android img {
@@ -598,11 +636,69 @@ footer h1 {
   margin-bottom: 40px;
 }
 
-/* Quest page */
-#quest main {
-  padding-top: 150px;
-  padding-bottom: 40px;
+/* Quest page
+
+Blue black: #07283B
+
+
+#quest > p,
+h1,
+h2,
+h3,
+h5 {
+  color: #07283B;
+} */
+
+.quest-black {
+  color: #07283B;
 }
+
+#quest h2 {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 3px;
+  padding-top: 30px;
+}
+
+#quest a{
+color: #f36d21;
+}
+
+.quest-quote {
+  color: #228cf2;
+  font-size: 16pt;
+  font-style: italic;
+  font-weight: 600;
+line-height: 1.6;
+}
+
+#quest img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+  .full-width img {
+  padding-top: 50px;
+}
+
+.prototype {
+  padding: 10px 0;
+}
+
+.quest-quote > .col-4{
+padding: 0 20px;
+}
+
+/*-----------*/
 
 .scroll-button {
   display: flex;
@@ -778,7 +874,7 @@ Small-Medium devices (400px and larger)
     padding-top: 25px;
   }
 
-  #work>img {
+  #work > img {
     position: relative;
   }
 
@@ -869,10 +965,6 @@ Small-Medium devices (400px and larger)
     display: table;
   }
 
-  /* Quest page */
-  #quest main {
-    padding-top: 200px;
-  }
 
   /* About-page */
   #about-page main {
@@ -942,6 +1034,10 @@ display: none;
     width: 42%;
   }
 
+.col-2-lg {
+  width: 50%;
+}
+
   .container {
     max-width: 1200px;
     margin-left: auto;
@@ -975,11 +1071,12 @@ display: none;
     scroll-margin-top: 7em;
   }
 
-  /* knitcase-page */
   .title {
     padding-bottom: 80px;
     padding-top: 230px;
   }
+
+  /* knitcase-page */
 
   #knitcase img {
     display: block;
@@ -1031,6 +1128,23 @@ display: none;
   .col-4 {
     padding: 0;
   }
+
+  /* Quest */
+
+  #quest img {
+    width: 60%;
+    padding-top: 10px;
+  }
+
+  #quest #quest-image img {
+    width: 100%;
+  }
+
+  #quest .full-width img {
+    width: 100%;
+  padding: inherit;
+  }
+
 }
 
 /* ==============================
