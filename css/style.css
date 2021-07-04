@@ -542,6 +542,10 @@ footer h1 {
   padding-bottom: 30px;
 }
 
+.clear-both {
+  clear: both;
+}
+
 /* Knitcase */
 
 #knitcase .col-lg-7 {
@@ -581,8 +585,8 @@ line-height: 1.6;
 }
 
 .knitcase-changes {
-      clear: both;
-      padding-top: 6px;
+  clear: both;
+  padding-top: 6px;
 }
 
 #knitcase .container {
