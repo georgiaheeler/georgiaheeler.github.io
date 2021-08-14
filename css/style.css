@@ -28,7 +28,7 @@ body {
 h1 {
   font-size: 1em;
   font-weight: 700;
-    color: #433237;
+  color: #433237;
   text-transform: uppercase;
   letter-spacing: 2pt;
   padding: 0 10px;
@@ -46,12 +46,12 @@ h2 {
 h3 {
   font-size: 1.2em;
   font-weight: 600;
-    color: #433237;
+  color: #433237;
 }
 
 h4 {
   font-family: 'Inter', sans-serif;
-  color: #7e7278;
+  color: #A9B2B7;
   margin: 0;
 }
 
@@ -325,6 +325,7 @@ main {
   float: left;
 }
 
+
 /* Header and navbar styling */
 header {
   background-color: #f0e4e4;
@@ -481,8 +482,6 @@ footer h1 {
   padding: 0 10px;
 }
 */
-
-
 #about-page h2 {
   margin: 10px 0;
 }
@@ -491,7 +490,6 @@ footer h1 {
   margin-top: 20px;
   margin-bottom: -10px;
 }
-
 
 #cv {
   margin: 40px 0;
@@ -547,7 +545,6 @@ footer h1 {
 }
 
 /* Knitcase */
-
 #knitcase .col-lg-7 {
   padding-bottom: 20px;
 }
@@ -556,7 +553,7 @@ footer h1 {
   padding-bottom: 30px;
 }
 
-#knitcase > p,
+#knitcase>p,
 h1,
 h5 {
   color: #433237;
@@ -570,6 +567,7 @@ h5 {
 
 #knitcase h4 {
   font-family: 'Amiko', sans-serif;
+  color: #7e7278;
 }
 
 #knitcase h1 {
@@ -581,7 +579,7 @@ h5 {
   font-size: 16pt;
   font-style: italic;
   font-weight: 600;
-line-height: 1.6;
+  line-height: 1.6;
 }
 
 .knitcase-changes {
@@ -629,8 +627,7 @@ line-height: 1.6;
   margin: 0;
 }
 
-
-#android-link {
+.prototype-link {
   display: block;
   margin: 20px 0;
   text-align: center;
@@ -656,7 +653,6 @@ h3,
 h5 {
   color: #07283B;
 } */
-
 .quest-black {
   color: #07283B;
 }
@@ -667,8 +663,8 @@ h5 {
   padding-top: 30px;
 }
 
-#quest a{
-color: #f36d21;
+#quest a {
+  color: #f36d21;
 }
 
 .quest-quote {
@@ -676,16 +672,16 @@ color: #f36d21;
   font-size: 16pt;
   font-style: italic;
   font-weight: 600;
-line-height: 1.6;
+  line-height: 1.6;
 }
 
-#quest img{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
+#quest img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .full-width {
+.full-width {
   width: 100vw;
   position: relative;
   left: 50%;
@@ -694,7 +690,7 @@ line-height: 1.6;
   margin-right: -50vw;
 }
 
-  .full-width img {
+.full-width img {
   padding-top: 50px;
 }
 
@@ -702,12 +698,41 @@ line-height: 1.6;
   padding: 10px 0;
 }
 
-.quest-quote > .col-4{
-padding: 0 20px;
+.quest-quote>.col-4 {
+  padding: 0 20px;
+}
+
+/* VTime page */
+.moss-black {
+  color: #243300;
+}
+
+#vtime h2 {
+  color: #98D901;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding-top: 30px;
+}
+
+#vtime h3 {
+  color: #243300;
+}
+
+#vtime a {
+  color: #f9970a;
+}
+
+.vtime-quote {
+  color: #f9970a;
+  font-style: italic;
+}
+
+.fa-chevron-circle-right {
+  color: #A9B2B7;
 }
 
 /*-----------*/
-
 .scroll-button {
   display: flex;
   justify-content: center;
@@ -827,7 +852,7 @@ Small-Medium devices (400px and larger)
     margin-top: 1.3em;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
@@ -853,6 +878,8 @@ Small-Medium devices (400px and larger)
   .next-previous-container {
     width: 70%;
   }
+
+  /*-----*/
 
   main {
     padding-top: 99px;
@@ -882,7 +909,7 @@ Small-Medium devices (400px and larger)
     padding-top: 25px;
   }
 
-  #work > img {
+  #work>img {
     position: relative;
   }
 
@@ -973,7 +1000,6 @@ Small-Medium devices (400px and larger)
     display: table;
   }
 
-
   /* About-page */
   #about-page main {
     padding-top: 200px;
@@ -1015,6 +1041,16 @@ Small-Medium devices (400px and larger)
     bottom: 60px;
     right: 25px;
   }
+
+  /*Vtime page*/
+
+  .vtime-img-smaller {
+    max-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 /* ==============================
@@ -1025,8 +1061,27 @@ Small-Medium devices (400px and larger)
     height: 60vh;
   }
 
+  .col-2-lg {
+    width: 50%;
+  }
+
   .ctn-icon {
-display: none;
+    display: none;
+  }
+
+  /* Vtime */
+  .vtime-img-small {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .vtime-img-smaller {
+    max-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1042,9 +1097,9 @@ display: none;
     width: 42%;
   }
 
-.col-2-lg {
-  width: 50%;
-}
+  .col-2-lg {
+    width: 50%;
+  }
 
   .container {
     max-width: 1200px;
@@ -1085,7 +1140,6 @@ display: none;
   }
 
   /* knitcase-page */
-
   #knitcase img {
     display: block;
     width: 50%;
@@ -1132,13 +1186,11 @@ display: none;
     width: 80%;
   }
 
-
   .col-4 {
     padding: 0;
   }
 
   /* Quest */
-
   #quest img {
     width: 60%;
     padding-top: 10px;
@@ -1150,7 +1202,22 @@ display: none;
 
   #quest .full-width img {
     width: 100%;
-  padding: inherit;
+    padding: inherit;
+  }
+
+  /* Vtime */
+  .vtime-img-small {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .vtime-img-smaller {
+    max-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
