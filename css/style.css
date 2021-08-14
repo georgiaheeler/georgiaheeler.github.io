@@ -720,12 +720,13 @@ h5 {
 }
 
 #vtime a {
-  color: #f9970a;
+  color: #74a700;
 }
 
 .vtime-quote {
   color: #f9970a;
   font-style: italic;
+  font-weight: 600;
 }
 
 .fa-chevron-circle-right {
