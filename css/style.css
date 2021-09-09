@@ -932,7 +932,7 @@ Small-Medium devices (400px and larger)
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: 220px;
+    top: 215px;
     left: 210px;
     min-width: 200px;
     width: 100%;
@@ -1051,7 +1051,6 @@ Small-Medium devices (400px and larger)
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 
 /* ==============================
@@ -1069,6 +1068,14 @@ Small-Medium devices (400px and larger)
   .ctn-icon {
     display: none;
   }
+
+/* Everknock */
+#everknock img {
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   /* Vtime */
   .vtime-img-small {
@@ -1221,6 +1228,14 @@ Small-Medium devices (400px and larger)
     margin-right: auto;
   }
 
+  /* Everknock */
+  #everknock img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 /* ==============================
@@ -1244,4 +1259,5 @@ Small-Medium devices (400px and larger)
     padding-top: 280px;
     padding-bottom: 40px;
   }
+
 }
